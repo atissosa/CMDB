@@ -1,0 +1,37 @@
+# Workspace and editor metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Shared local secrets/templates policy
+.env
+.env.*
+!.env.example
+*.secrets.properties
+config-local.properties
+
+# Common temporary artifacts
+*.log
+*.tmp
+*.bak
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Backend generated outputs (component-local build remains unchanged)
+cmdb-backend/target/
+cmdb-backend/docs/evidence/
+cmdb-backend/contract-http-reports/
+cmdb-backend/payload-http-reports/
+cmdb-backend/legacy-test-output/
+cmdb-backend/legacy-test-report/
+
+# Frontend generated outputs
+cmdb-frontend/node_modules/
+cmdb-frontend/bower_components/
+cmdb-frontend/dist/
+cmdb-frontend/build/
+cmdb-frontend/.cache/

@@ -1,0 +1,3 @@
+* text=auto
+cmdb-backend/mvnw text eol=lf
+*.cmd text eol=crlf

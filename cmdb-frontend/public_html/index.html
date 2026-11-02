@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Inicio de sesión</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="conf/propiedades.js" type="text/javascript"></script>
+        <script src="js/bootstrap.bundle.js" type="text/javascript"></script>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css\all.min.css">
+        <link href="css/estilosPropios.css" rel="stylesheet" type="text/css"/>
+        <script src="js/funciones.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <div class="modal" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-dialog">
+                    <div class="modal-dialog-centered">
+                        <i id="spinnerId" class="fa fa-spinner fa-pulse" style="font-size:50px"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="container">
+                <h2 class="tituloHeader">CMDB</h2>
+                <div id="logout">
+                    <span id="tagNombre"></span>
+                    <input id="btnSalir" type="button" value="Salir" class="btn btn-dark btn-sm">
+                </div>
+            </div>
+        </header>
+
+        <main role="main" class="container">
+
+            <div id="pagina-login">
+                <form id="formulario-login" class="form-signin">
+                    <h1 class="h3 mb-3 font-weight-normal">Por favor inicie sesión</h1>
+                    <p><input id="inputUsuario" type="text" class="form-control" placeholder="Nombre de usuario" autofocus="" required=""></p>
+                    <p><input id="inputPass" type="password" class="form-control" placeholder="Contraseña" required=""></p>
+                    <p><input id="btnLogin" class="btn btn-lg btn-primary btn-block" type="submit" value="Login"></p>
+                </form>
+            </div>
+
+
+            <div id="pagina-principal">
+
+                <nav>
+                    <ul id="menu-principal" class="nav nav-tabs nav-fill" role="tablist">
+                        <li class="nav-item"><a id="tab-equipos" class="nav-link active" data-toggle="tab" href="#equipos" role="tab" aria-controls="equipos" aria-selected="false">Equipos</a></li>
+                        <li class="nav-item"><a id="tab-subagencias" class="nav-link" data-toggle="tab" href="#subagencias" role="tab" aria-controls="subagencias" aria-selected="false">Subagencias</a></li>
+                        <li class="nav-item"><a id="tab-services" class="nav-link" data-toggle="tab" href="#services" role="tab" aria-controls="services" aria-selected="false">Proveedores</a></li>
+                        <li class="nav-item"><a id="tab-departamentos" class="nav-link" data-toggle="tab" href="#departamentos" role="tab" aria-controls="departamentos" aria-selected="true">Departamentos</a></li>
+                    </ul>
+                </nav>
+
+                <div class="tab-content">
+
+                    <section id="departamentos" role="tabpanel" aria-labelledby="tab-departamentos" class="tab-pane fade show active">
+                        <div class="row">
+                            <div class="col-2">
+                                <nav>
+                                    <ul id="menu-departamentos" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                                        <li class="nav-item"><a id="pill-departamentos-alta" class="nav-link" data-toggle="pill" href="#departamentos-alta" role="tab" aria-controls="departamentos-alta" aria-selected="false">Alta</a></li>
+                                        <li class="nav-item"><a id="pill-departamentos-listado" class="nav-link active" data-toggle="pill" href="#departamentos-listado" role="tab" aria-controls="departamentos-listado" aria-selected="true">Listado</a></li>
+                                        <li class="nav-item"><a id="pill-departamentos-modificar" class="nav-link" data-toggle="pill" href="#departamentos-modificar" role="tab" aria-controls="departamentos-modificar" aria-selected="false" hidden>Modificar</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-10">
+                                <div class="tab-content">
+                                    <section id="departamentos-alta" role="tabpanel" aria-labelledby="pill-departamentos-alta" class="tab-pane fade">
+                                        <h3>Alta de departamento</h3>
+                                        <form id="formulario-altaDepartamento" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputNombreDepartamento">Nombre: </label>
+                                                    <input id="inputNombreDepartamento" type="text" class="form-control col-6" placeholder="Nombre" autofocus="" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionDepartamento">Descripcion: </label>
+                                                    <input id="inputDescripcionDepartamento" type="text" class="form-control col-6" placeholder="Descripcion">
+                                                </div>
+                                            </div>
+                                            <div class="col-6"></div>
+                                            <div class="form-group row">
+                                                <input id="btnAltaDepartamento" class="btn btn-lg btn-primary btn-block" type="submit" value="Agregar">
+                                            </div>
+                                        </form>
+                                    </section>
+
+                                    <section id="departamentos-listado" role="tabpanel" aria-labelledby="pill-departamentos-listado" class="tab-pane fade show active">
+                                        <h3>Listado de Departamentos</h3>
+                                        <div id="filtros-departamentos-listado">
+                                            <label class="label">Nombre : </label>
+                                            <p>
+                                                <input type="text" id="filtroNombre-departamentos-listado" class="form-control col-2">
+                                            </p>
+                                        </div>
+                                        <span id="tabla-departamentos"></span>
+                                    </section>
+
+                                    <section id="departamentos-modificar" data-id="0" role="tabpanel" aria-labelledby="pill-departamentos-modificar" class="tab-pane fade">
+                                        <h3>Modificar departamento</h3>
+                                        <form id="formulario-modificarDepartamento" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputIdDepartamentoModificar">Id: </label>
+                                                    <input id="inputIdDepartamentoModificar" type="text" class="form-control col-6" placeholder="Id" autofocus="" required="" readonly>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputNombreDepartamentoModificar">Nombre: </label>
+                                                    <input id="inputNombreDepartamentoModificar" type="text" class="form-control col-6" placeholder="Nombre" autofocus="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionDepartamentoModificar">Descripcion: </label>
+                                                    <input id="inputDescripcionDepartamentoModificar" type="text" class="form-control col-6" placeholder="Descripcion">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputActivoDepartamentoModificar">Estado: </label>
+                                                    <select id="inputActivoDepartamentoModificar" class="form-control col-6">
+                                                        <option value="true">Activo</option>
+                                                        <option value="false">Inactivo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <input id="btnModificarDepartamento" class="btn btn-lg btn-primary btn-block" type="submit" value="Guardar">
+                                            </div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="equipos" role="tabpanel" aria-labelledby="tab-equipos" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-2">
+                                <nav>
+                                    <ul id="menu-equipos" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                                        <li class="nav-item"><a id="pill-equipos-alta" class="nav-link" data-toggle="pill" href="#equipos-alta" role="tab" aria-controls="equipos-alta" aria-selected="false">Alta</a></li>
+                                        <li class="nav-item"><a id="pill-equipos-listado" class="nav-link active" data-toggle="pill" href="#equipos-listado" role="tab" aria-controls="equipos-listado" aria-selected="true">Listado</a></li>
+                                        <li class="nav-item"><a id="pill-mantenimiento-prestamos" class="nav-link" data-toggle="pill" href="#mantenimiento-prestamos" role="tab" aria-controls="mantenimiento-prestamos" aria-selected="false">Mantenimiento de préstamos</a></li>
+                                        <li class="nav-item"><a id="pill-equipos-modificar" class="nav-link" data-toggle="pill" href="#equipos-modificar" role="tab" aria-controls="equipos-modificar" aria-selected="false" hidden hidden>Modificar</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-10">
+                                <div class="tab-content">
+                                    <section id="equipos-alta" role="tabpanel" aria-labelledby="pill-equipos-alta" class="tab-pane fade">
+                                        <h3>Alta de equipo</h3>
+                                        <form id="formulario-altaEquipo" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectTipoEquipo">Tipo de equipo: </label>
+                                                    <select id="selectTipoEquipo" class="form-control col-6 tipo-equipo" ></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputMarcaEquipo">Marca: </label>
+                                                    <select id="inputMarcaEquipo" class="form-control col-6 marca-equipo"></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputModeloEquipo">Modelo: </label>
+                                                    <select id="inputModeloEquipo" class="form-control col-6 modelo-equipo"></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputPrecioEquipo">Precio: </label>
+                                                    <input id="inputPrecioEquipo" type="number" class="form-control col-6" placeholder="Precio de compra" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputGarantiaEquipo">Garantía (meses): </label>
+                                                    <input id="inputGarantiaEquipo" type="number" class="form-control col-6" placeholder="Meses de garantía" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputSerieEquipo">S/N: </label>
+                                                    <input id="inputSerieEquipo" type="text" class="form-control col-6" placeholder="Nº de serie" autofocus="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputPrestamoEquipo">Es prestamo: </label>
+                                                    <input id="inputPrestamoEquipo" type="checkbox" class="form-check-input col-7 esPrestamo">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectLugarEquipo">Lugar propietario: </label>
+                                                    <select id="selectLugarEquipo" class="form-control col-6 lugar" ></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputFechaEquipo">Fecha de alta: </label>
+                                                    <input id="inputFechaEquipo" type="date" class="form-control col-6 fechaAlta" placeholder="Fecha alta" autofocus="" required="">
+                                                </div>
+                                                <div class="campoOpcional form-group row campoPC">
+                                                    <label class="label col-3" for="inputPrecintoEquipo">N° de precinto: </label>
+                                                    <input id="inputPrecintoEquipo" type="number" class="form-control col-6" placeholder="Nº de precinto" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row">
+                                                    <label class="label col-3" for="inputDHCPEquipo">DHCP: </label>
+                                                    <input id="inputDHCPEquipo" type="checkbox" class="form-check-input col-6 DHCP">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputIpEquipo">IP: </label>
+                                                    <input id="inputIpEquipo" type="text" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" class="form-control col-6 DireccionIp" placeholder="Dirección IP" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputHostEquipo">Nombre del host: </label>
+                                                    <input id="inputHostEquipo" type="text" class="form-control col-6" placeholder="Nombre de host" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputProcesadorEquipo">Procesador: </label>
+                                                    <input id="inputProcesadorEquipo" type="text" class="form-control col-6" placeholder="Procesador" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputRamEquipo">Memoria Ram: </label>
+                                                    <input id="inputRamEquipo" type="number" class="form-control col-6" placeholder="Memoria RAM" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputDiscoEquipo">Disco: </label>
+                                                    <input id="inputDiscoEquipo" type="number" class="form-control col-6" placeholder="Tamaño disco" required="">
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row" disabled="true">
+                                                    <label class="label col-3" for="selectOpcionEquipo">Opcion de impresión: </label>
+                                                    <select id="selectOpcionEquipo" class="form-control col-6 opcion-impresora" ></select>
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row" disabled="true">
+                                                    <label class="label col-3" for="inputMultifuncionEquipo">Es multifunción: </label>
+                                                    <input id="inputMultifuncionEquipo" type="checkbox" class="form-check-input col-7" >
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row" disabled="true">
+                                                    <label class="label col-3" for="selectConexionEquipo">Conexión: </label>
+                                                    <select id="selectConexionEquipo" class="form-control col-6 conexion-impresora" ></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionEquipo">Descripción: </label>
+                                                    <textarea id="inputDescripcionEquipo" class="form-control col-6" placeholder="Descripción"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <input id="btnAltaEquipo" class="btn btn-lg btn-primary btn-block" type="submit" value="Agregar">
+                                            </div>
+                                        </form>
+                                    </section>
+
+                                    <section id="equipos-listado" role="tabpanel" aria-labelledby="pill-equipos-listado" class="tab-pane fade show active">
+                                        <h3>Listado de equipos</h3><br>
+                                        <div id="filtros-equipos-listado">
+                                            <table class="table table-condensed table-striped table-active">
+                                                <tr>
+                                                    <td>Código</td>
+                                                    <td>Número de serie</td>
+                                                    <td>Tipo</td>
+                                                    <td>Estado</td>
+                                                    <td>Préstamo</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" id="filtroCodigo-equipos-listado" class="form-control"></td>
+                                                    <td><input type="text" id="filtroNumeroSerie-equipos-listado" class="form-control"></td>
+                                                    <td><select multiple size="3" id="filtroTipo-equipos-listado" class="form-control tipo-equipo col-12"></select></td>
+                                                    <td><select multiple size="3" id="filtroEstado-equipos-listado" class="form-control estado-equipo col-12"></select></td>
+                                                    <td><select id="filtroPrestamo-equipos-listado" class="form-control">
+                                                            <option value="" selected>Todos</option>
+                                                            <option value="true">Préstamo</option>
+                                                            <option value="false">No préstamo</option>
+                                                        </select></td>
+                                                    <td><input type="button" id="btnLimpiarListadoEquipos" class="btn btn-md btn-primary btn-block" value="Limpiar"></td>
+                                                    <td><input type="button" id="btnActualizarListadoEquipos" class="btn btn-md btn-primary btn-block" value="Actualizar"></td>
+                                                </tr>
+                                            </table>
+                                        </div><br>
+                                        <span id="tabla-equipos"></span>
+                                    </section>
+
+                                    <section id="mantenimiento-prestamos" role="tabpanel" aria-labelledby="pill-mantenimiento-prestamos" class="tab-pane fade">
+                                        <h3>Mantenimiento de préstamos</h3>
+                                        <div id="filtros-mantenimiento-prestamos">
+                                            <label class="label">Categoría: </label>
+                                            <p>
+                                                <input type="text" id="filtroCategoria-mantenimiento-prestamos" class="form-control col-2">
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <input type="button" id="inputInformacionMantenimientoPrestamos" class="btn btn-primary" value="Ayuda">
+                                        </div>
+                                        <div>
+                                            <input id="btnModalParametrosMantenimiento" class="btn btn-primary" type="button" value="Modificar parametros">
+                                        </div>
+                                        <span id="tabla-mantenimiento-prestamos"></span>
+                                    </section>
+
+                                    <section id="equipos-modificar" data-id="0" data-tipo="" role="tabpanel" aria-labelledby="pill-equipos-modificar" class="tab-pane fade">
+                                        <h3>Modificar equipo</h3>
+                                        <form id="formulario-modificarEquipo" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputIdEquipoModificar">Id: </label>
+                                                    <input id="inputIdEquipoModificar" type="text" class="form-control col-6" placeholder="Id" autofocus="" disabled="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputCodigoEquipoModificar">Código inventario: </label>
+                                                    <input id="inputCodigoEquipoModificar" type="text" class="form-control col-6" placeholder="Código inventario" autofocus="" disabled="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputSerieEquipoModificar">S/N: </label>
+                                                    <input id="inputSerieEquipoModificar" type="text" class="form-control col-6" placeholder="S/N" autofocus="" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputMarcaEquipoModificar">Marca: </label>
+                                                    <input id="inputMarcaEquipoModificar" type="text" class="form-control col-6" placeholder="Marca" disabled="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputModeloEquipoModificar">Modelo: </label>
+                                                    <input id="inputModeloEquipoModificar" type="text" class="form-control col-6" placeholder="Modelo" disabled="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputPrecioEquipoModificar">Precio de compra: </label>
+                                                    <input id="inputPrecioEquipoModificar" type="number" class="form-control col-6" placeholder="Precio de compra" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionEquipoModificar">Descripción: </label>
+                                                    <textarea id="inputDescripcionEquipoModificar" class="form-control col-6" placeholder="Descripción"></textarea></div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputGarantiaEquipoModificar">Meses de garantía: </label>
+                                                    <input id="inputGarantiaEquipoModificar" type="number" class="form-control col-6" placeholder="Meses de garantía" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputPrestamoEquipoModificar">Es préstamo: </label>
+                                                    <input id="inputPrestamoEquipoModificar" type="checkbox" class="form-check-input col-7 esPrestamo">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectLugarEquipoModificar">Lugar propietario: </label>
+                                                    <select id="selectLugarEquipoModificar" class="form-control col-6 lugar" ></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectLugarActualEquipoModificar">Lugar actual </label>
+                                                    <input id="selectLugarActualEquipoModificar" class="form-control col-6 lugarActual" disabled=""></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputFechaEquipoModificar">Fecha alta: </label>
+                                                    <input id="inputFechaEquipoModificar" type="date" class="form-control col-6 fechaAlta" placeholder="Fecha alta" autofocus="" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputUsuarioEquipoModificar">Usuario alta: </label>
+                                                    <input id="inputUsuarioEquipoModificar" type="text" class="form-control col-6" placeholder="Usuario alta" autofocus="" disabled="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectTipoEquipoModificar">Tipo de equipo: </label>
+                                                    <select id="selectTipoEquipoModificar" class="form-control col-6 tipo-equipo" disabled="true" readonly></select>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="selectEstadoEquipoModificar">Estado: </label>
+                                                    <input id="selectEstadoEquipoModificar" class="form-control col-6 estado-equipo" disabled="true"></select>
+                                                </div>
+                                                <div class=" campoOpcional form-group row campoPC">
+                                                    <label class="label col-3" for="inputPrecintoEquipoModificar">Nº de precinto: </label>
+                                                    <input id="inputPrecintoEquipoModificar" type="number" class="form-control col-6" placeholder="Nº de precinto" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row">
+                                                    <label class="label col-3" for="inputDHCPModificarEquipo">DHCP: </label>
+                                                    <input id="inputDHCPModificarEquipo" type="checkbox" class="form-check-input col-6 DHCP">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row">
+                                                    <label class="label col-3" for="inputIpEquipoModificar">IP: </label>
+                                                    <input id="inputIpEquipoModificar" type="text" pattern="^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$" class="form-control col-6 DireccionIp" placeholder="Dirección IP" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC campoImpresora ambos form-group row">
+                                                    <label class="label col-3" for="inputHostEquipoModificar">Nombre de host: </label>
+                                                    <input id="inputHostEquipoModificar" type="text" class="form-control col-6" placeholder="Nombre de host" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row">
+                                                    <label class="label col-3" for="inputProcesadorEquipoModificar">Procesador: </label>
+                                                    <input id="inputProcesadorEquipoModificar" type="text" class="form-control col-6" placeholder="Procesador" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row">
+                                                    <label class="label col-3" for="inputRamEquipoModificar">Memoria RAM: </label>
+                                                    <input id="inputRamEquipoModificar" type="number" class="form-control col-6" placeholder="Memoria RAM" required="">
+                                                </div>
+                                                <div class="campoOpcional campoPC form-group row">
+                                                    <label class="label col-3" for="inputDiscoEquipoModificar">Disco: </label>
+                                                    <input id="inputDiscoEquipoModificar" type="number" class="form-control col-6" placeholder="Tamaño disco" required="">
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row">
+                                                    <label class="label col-3" for="selectOpcionEquipoModificar">Opción: </label>
+                                                    <select id="selectOpcionEquipoModificar" class="form-control col-6 opcion-impresora" ></select>
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row">
+                                                    <label class="label col-3" for="inputMultifuncionEquipoModificar">Multifunción: </label>
+                                                    <input id="inputMultifuncionEquipoModificar" type="checkbox" class="form-check-input col-7">
+                                                </div>
+                                                <div class="campoOpcional campoImpresora form-group row">
+                                                    <label class="label col-3" for="selectConexionEquipoModificar">Conexión: </label>
+                                                    <select id="selectConexionEquipoModificar" class="form-control col-6 conexion-impresora" ></select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <input id="btnModificarEquipo" class="btn btn-lg btn-primary btn-block" type="submit" value="Guardar">
+                                            </div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="services" role="tabpanel" aria-labelledby="tab-services" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-2">
+                                <nav>
+                                    <ul id="menu-services" class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                                        <li class="nav-item"><a id="pill-services-alta" class="nav-link" data-toggle="pill" href="#services-alta" role="tab" aria-controls="services-alta" aria-selected="false">Alta</a></li>
+                                        <li class="nav-item"><a id="pill-services-listado" class="nav-link active" data-toggle="pill" href="#services-listado" role="tab" aria-controls="services-listado" aria-selected="true">Listado</a></li>
+                                        <li class="nav-item"><a id="pill-services-modificar" class="nav-link" data-toggle="pill" href="#services-modificar" role="tab" aria-controls="services-modificar" aria-selected="false" hidden>Modificar</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-10">
+                                <div class="tab-content">
+                                    <section id="services-alta" role="tabpanel" aria-labelledby="pill-services-alta" class="tab-pane fade">
+                                        <h3>Alta de proveedor</h3>
+                                        <form id="formulario-altaService" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputNombreService">Nombre: </label>
+                                                    <input id="inputNombreService" type="text" class="form-control col-6" placeholder="Nombre" autofocus="" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionService">Descripcion: </label>
+                                                    <input id="inputDescripcionService" type="text" class="form-control col-6" placeholder="Descripcion">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDireccionService">Direccion: </label>
+                                                    <input id="inputDireccionService" type="text" class="form-control col-6" placeholder="Direccion" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                            </div>
+                                            <div class="form-group row">
+                                                <input id="btnAltaService" class="btn btn-lg btn-primary btn-block" type="submit" value="Agregar">
+                                            </div>
+                                        </form>
+                                    </section>
+
+                                    <section id="services-listado" role="tabpanel" aria-labelledby="pill-services-listado" class="tab-pane fade show active">
+                                        <h3>Listado de proveedores</h3>
+                                        <div id="filtros-services-listado">
+                                            <label class="label">Nombre: </label>
+                                            <p>
+                                                <input type="text" id="filtroNombre-services-listado" class="form-control col-2">
+                                            </p>
+                                        </div>
+                                        <span id="tabla-services"></span>
+                                    </section>
+
+                                    <section id="services-modificar" data-id="0" role="tabpanel" aria-labelledby="pill-services-modificar" class="tab-pane fade">
+                                        <h3>Modificar proveedor</h3>
+                                        <form id="formulario-modificarService" class="form-signin row">
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputIdServiceModificar">Id: </label>
+                                                    <input id="inputIdServiceModificar" type="text" class="form-control col-6" placeholder="Id" autofocus="" required="" readonly>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputNombreServiceModificar">Nombre: </label>
+                                                    <input id="inputNombreServiceModificar" type="text" class="form-control col-6" placeholder="Nombre" autofocus="" required="">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDescripcionServiceModificar">Descripcion: </label>
+                                                    <input id="inputDescripcionServiceModificar" type="text" class="form-control col-6" placeholder="Descripcion">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputDireccionServiceModificar">Direccion: </label>
+                                                    <input id="inputDireccionServiceModificar" type="text" class="form-control col-6" placeholder="Direccion" required="">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="label col-3" for="inputActivoServiceModificar">Estado: </label>
+                                                    <select id="inputActivoServiceModificar" class="form-control col-6">
+                                                        <option value="true">Activo</option>
+                                                        <option value="false">Inactivo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <input id="btnModificarService" class="btn btn-lg btn-primary btn-block" type="submit" value="Guardar">
+                                            </div>
+                                        </form>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="subagencias" role="tabpanel" aria-labelledby="tab-subagencias" class="tab-pane fade">
+                        <div class="container">
+                            <h3>Listado de Subagencias</h3>
+                            <div id="filtros-subagencias-listado">
+                                <label class="label">Número: </label>
+                                <p>
+                                    <input type="text" id="filtroNombre-subagencias-listado" class="form-control col-2">
+                                </p>
+                            </div>
+                            <span id="tabla-subagencias"></span>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Diego Falciola, Sebastián Sosa - 2018</span>
+            </div>
+        </footer>
+
+
+        <div class="modal fade" id="modalPrestarEquipoSubagencia" tabindex="-1" role="dialog" aria-hidden="true" data-id="0">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Prestar equipo a subagencia</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group row">
+                            <label class="label col-3">Subagencia: </label>
+                            <select class="subagencia form-control col-8 lugar"></select>
+                        </div>
+                        <div class="form-group row">
+                            <label class="label col-3">Averiado: </label>
+                            <select class="averiado form-control col-8"></select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btnPrestarEquipoSubagencia" type="button" class="btn btn-primary">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modalHistoricoEquipo" tabindex="-1" role="dialog" aria-hidden="true" data-id="0">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Histórico de equipo <span id="snHistorico"></span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <span id="tabla-historico"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalInformacionMantenimientoPrestamo" tabindex="-1" role="dialog" aria-hidden="true" data-id="0">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Informacion de mantenimiento de prestamos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Estos son los parametros por defecto cargados por la aplicación:</p>
+                        <figure>
+                            <img alt="parametros de mantenimiento" src="img/Parametros_por_defecto.PNG">
+                        </figure>
+
+                        <p>
+                            A continuación se muestran los calculos de valores tenidos en cuenta para obtener la depreciación
+                            mensual de un equipo:
+                        </p>
+                        <ul>
+                            <li>
+                                valorDeDescuentoMensual = precioCompra * 10%
+                            </li>
+                            <li>
+                                mesesDeVidaUtil = 48 por defecto
+                            </li>
+                            <li>
+                                depreciacion = (precioCompra - valorDeDescuentoMensual)/ mesesDeVidaUtil
+                            </li>
+                            <li>
+                                costoVenta = precioCompra - (depreciación * mesesDeAltaDeEquipo)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalModificarParametrosMantenimiento" tabindex="-1" role="dialog" aria-hidden="true" data-id="0">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Parametros de mantenimiento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="formulario-modificar-parametros" class="form-signin">
+                            <table class="table table-responsive table-condensed table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Color</th>
+                                        <th>Cantidad meses en prestamo</th>
+                                        <th>Cantidad veces prestado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color: red">Rojo (>)</td>
+                                        <td><input id="inputRojoCantMinMesesEnPrestamo" type="number" class="form-control" ></td>
+                                        <td><input id="inputRojoCantMinVecesPrestado" type="number" class="form-control" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: yellow">Amarillo (>)</td>
+                                        <td><input id="inputAmarilloCantMinMesesEnPrestamo" type="number" class="form-control" ></td>
+                                        <td><input id="inputAmarilloCantMinVecesPrestado" type="number" class="form-control" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: green">Verde (<)</td>
+                                        <td><input id="inputVerdeCantMaxMesesEnPrestamo" type="number" class="form-control" ></td>
+                                        <td><input id="inputVerdeCantMaxVecesPrestado" type="number" class="form-control" ></td>
+                                    </tr>
+                                <tbody>
+                            </table>
+                            <div class="form-group row">
+                                <input id="btnModificarParametrosMantenimiento" type="submit" value="Modificar" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
