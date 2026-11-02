@@ -32,11 +32,13 @@ This preserved backend commit ancestry while relocating backend files to a compo
 
 - `ebc2e0e` chore(repo): initialize CMDB monorepo root
 - `d93b2b1` chore(repo): import backend history under cmdb-backend/
-- `2c373a3` chore(repo): import frontend snapshot under cmdb-frontend/
+- `346fefa` chore(repo): import frontend and sanitize paths/branding
 
 Backend historical reference remains reachable through merge ancestry:
 
 - `b19a566` chore: sanitized local history before first push
+
+Note: frontend import and root metadata/docs were compacted into `346fefa` to remove local-path and legacy-brand references from active branch history.
 
 ## Post-integration checks
 
