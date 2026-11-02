@@ -35,3 +35,5 @@ cmdb-frontend/bower_components/
 cmdb-frontend/dist/
 cmdb-frontend/build/
 cmdb-frontend/.cache/
+
+/cmdb.code-workspace

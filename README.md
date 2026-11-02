@@ -1,34 +1,96 @@
 # CMDB Monorepo
 
-This repository contains both CMDB components:
+Este repositorio contiene el sistema CMDB (Configuration Management Database),
+compuesto por un backend Java y un frontend legacy.
 
-- `cmdb-backend/` (Spring Boot + Maven)
-- `cmdb-frontend/` (static frontend with legacy Node/Bower tooling files)
+## Que resuelve este sistema
 
-## Working model
+CMDB centraliza la gestion de configuracion e inventario tecnico. Permite,
+entre otros flujos:
 
-- Keep each component build/run workflow inside its own directory.
-- Do not move backend Maven files (`pom.xml`, `src/`) to repository root.
-- Do not mix frontend and backend build artifacts.
+- Gestionar lugares (departamentos centrales, subagencias y services).
+- Gestionar activos/equipos y su estado operativo.
+- Gestionar prestamos, reparaciones e historicos asociados.
+- Exponer API HTTP para consumo del cliente web.
 
-## Backend
+## Estructura del repositorio
 
-From `cmdb-backend/`:
+- cmdb-backend/: API y logica de negocio (Spring Boot, Maven, SQL Server).
+- cmdb-frontend/: cliente web estatico legacy.
+
+## Requisitos de instalacion
+
+- JDK 21.
+- Python 3.
+- Docker Engine con Docker Compose habilitado.
+
+Verificacion rapida:
+
+```bash
+java -version
+python3 --version
+docker info
+docker compose version
+```
+
+## Instalacion y puesta en marcha
+
+### 1) Backend
+
+Desde cmdb-backend:
+
+```bash
+cd cmdb-backend
+python3 scripts/dev/cmdb-dev.py configure
+python3 scripts/dev/cmdb-dev.py up
+./mvnw -B clean verify
+python3 scripts/dev/cmdb-dev.py backend
+```
+
+Backend disponible por defecto en:
+
+- http://localhost:8081/cmdb-backend/recursos/
+
+Chequeo basico de API:
+
+```bash
+curl --fail-with-body -i \
+	http://localhost:8081/cmdb-backend/recursos/departamento
+```
+
+### 2) Frontend
+
+Desde cmdb-frontend:
+
+```bash
+cd cmdb-frontend/public_html
+python3 -m http.server 18080
+```
+
+Abrir en navegador:
+
+- http://127.0.0.1:18080/index.html
+
+Nota: si el servidor se ejecuta desde cmdb-frontend (raiz) en lugar de
+public_html, la ruta correcta pasa a ser /public_html/index.html.
+
+## Validacion y pruebas
+
+Desde cmdb-backend:
 
 ```bash
 ./mvnw -B clean verify
 python3 scripts/verify-test-inventory.py
 ```
 
-## Frontend
+## Modelo de trabajo en monorepo
 
-From `cmdb-frontend/`, load the application entrypoint currently used by the project:
+- Mantener el flujo de build/run de cada componente dentro de su carpeta.
+- No mover archivos Maven del backend (pom.xml, src/) a la raiz.
+- No mezclar artefactos de build entre frontend y backend.
 
-- `public_html/index.html`
+## Notas
 
-Any additional frontend build/test command should be executed only if that toolchain is present in this component.
-
-## Notes
-
-- Historical backend commits are preserved and imported under `cmdb-backend/` in this monorepo.
-- Frontend was imported as an initial snapshot because no frontend Git repository was found in `cmdb-frontend/`.
+- El historial del backend fue preservado e importado bajo cmdb-backend/.
+- El frontend fue incorporado como snapshot inicial porque no se encontro un
+	repositorio Git propio dentro de cmdb-frontend/.
