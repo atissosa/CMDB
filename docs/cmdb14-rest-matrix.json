@@ -1,0 +1,860 @@
+[
+  {
+    "class": "RecursoComboLugares",
+    "path": "/recursos/comboLugares",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "todosLosLugaresHomologados",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "lugaresHomologados",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": false,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoConexionesImpresoras",
+    "path": "/recursos/conexionesImpresoras",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "devolverConexionesImpresoras",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "retornarConexionesImpresoras",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoDepartamentoCentral",
+    "path": "/recursos/departamento",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "buscar",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"id\") Integer id",
+        "business_calls": [
+          {
+            "method": "buscarDepartamentosCentral",
+            "arguments": "id"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "alta",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+        "business_calls": [
+          {
+            "method": "altaDepartamentoCentral",
+            "arguments": "dtoDepartamento, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificar",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+        "business_calls": [
+          {
+            "method": "modificarDepartamentoCentral",
+            "arguments": "dtoDepartamento, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "baja",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+        "business_calls": [
+          {
+            "method": "bajaDepartamentoCentral",
+            "arguments": "dtoDepartamento, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoEquipo",
+    "path": "/recursos/equipo",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "buscarEquipos",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarEquipos",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "darEquipoDeBaja",
+        "response_type": "Response",
+        "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+        "business_calls": [
+          {
+            "method": "darEquipoDeBaja",
+            "arguments": "dtoFiltroEquipo"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "asignarParaPrestamo",
+        "response_type": "Response",
+        "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+        "business_calls": [
+          {
+            "method": "asignarEquipoParaPrestamo",
+            "arguments": "dtoFiltroEquipo"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "despacharEquipo",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "despacharEquipo",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoEquipos",
+    "path": "/recursos/equipos",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "buscarEquipos",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOFiltroEquipo dtoFiltroEquipo",
+        "business_calls": [
+          {
+            "method": "buscarEquipos",
+            "arguments": "dtoFiltroEquipo"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoEstadosEquipos",
+    "path": "/recursos/estadosEquipos",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "devolverEstadosEquipos",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "retornarEstadosEquipos",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoHistoricoEquipo",
+    "path": "/recursos/historicoEquipo",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getHistoricoEquipos",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarHistoricoEquipos",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoImpresora",
+    "path": "/recursos/impresora",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "altaImpresora",
+        "response_type": "Response",
+        "parameters": "DTOImpresora nuevaImpresora",
+        "business_calls": [
+          {
+            "method": "altaImpresora",
+            "arguments": "nuevaImpresora"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "GET",
+        "method": "buscarImpresora",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarEquipo",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificarImpresora",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOImpresora impresora",
+        "business_calls": [
+          {
+            "method": "modificarImpresora",
+            "arguments": "impresora, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoLogin",
+    "path": "/recursos/login",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "login",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers",
+        "business_calls": [
+          {
+            "method": "login",
+            "arguments": "credencialesSeparadas[0], credencialesSeparadas[1]"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "logout",
+        "response_type": "void",
+        "parameters": "@Context HttpHeaders headers",
+        "business_calls": [
+          {
+            "method": "logout",
+            "arguments": "credencialesSeparadas[0]"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": false
+      }
+    ]
+  },
+  {
+    "class": "RecursoLugar",
+    "path": "/recursos/lugar",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "buscarEquipos",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"id\") Integer id",
+        "business_calls": [
+          {
+            "method": "getLugares",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoMantenimientoPrestamos",
+    "path": "/recursos/mantenimientoPrestamo",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "listadoMantenimiento",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers",
+        "business_calls": [
+          {
+            "method": "listadoMantenimientoEquiposDePrestamo",
+            "arguments": "credencialesSeparadas[0]"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "modificarParametrosMantenimientoPrestamo",
+        "response_type": "Response",
+        "parameters": "DTOParametroMantenimientoPrestamo dto",
+        "business_calls": [
+          {
+            "method": "modificarParametrosMantenimientoPrestamos",
+            "arguments": "dto"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoOpcionesImpresoras",
+    "path": "/recursos/opcionesImpresoras",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "devolverOpcionesImpresoras",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "retornarOpcionesImpresoras",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoOtroEquipo",
+    "path": "/recursos/otroEquipo",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "altaOtroEquipo",
+        "response_type": "Response",
+        "parameters": "DTOOtroEquipo nuevoOtroEquipo",
+        "business_calls": [
+          {
+            "method": "altaOtroEquipo",
+            "arguments": "nuevoOtroEquipo"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "GET",
+        "method": "buscarOtroEquipo",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarEquipo",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificarOtroEquipo",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOOtroEquipo equipo",
+        "business_calls": [
+          {
+            "method": "modificarOtroEquipo",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPC",
+    "path": "/recursos/pc",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "altaPC",
+        "response_type": "Response",
+        "parameters": "DTOPC nuevaPC",
+        "business_calls": [
+          {
+            "method": "altaPc",
+            "arguments": "nuevaPC"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "GET",
+        "method": "buscarPc",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarEquipo",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificarPC",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOPC pc",
+        "business_calls": [
+          {
+            "method": "modificarPC",
+            "arguments": "pc, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPlantillaImpresora",
+    "path": "/recursos/plantillaIMPRESORA",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getPlantillasImpresora",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"marca\") String marca",
+        "business_calls": [
+          {
+            "method": "getPlantillasImpresoras",
+            "arguments": "marca"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "getPlantillaImpresora",
+        "response_type": "Response",
+        "parameters": "DTOPlantillaImpresora dto",
+        "business_calls": [
+          {
+            "method": "buscarPlantillaImpresora",
+            "arguments": "dto"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPlantillaOtroEquipo",
+    "path": "/recursos/plantillaOTROEQUIPO",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getPlantillasOtroEquipo",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"marca\") String marca, @QueryParam(\"tipo\") String tipo",
+        "business_calls": [
+          {
+            "method": "getPlantillasOtroEquipo",
+            "arguments": "tipo, marca"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "getPlantillaOtroEquipo",
+        "response_type": "Response",
+        "parameters": "DTOPlantillaOtroEquipo dto",
+        "business_calls": [
+          {
+            "method": "buscarPlantillaOtroEquipo",
+            "arguments": "dto"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPlantillaPc",
+    "path": "/recursos/plantillaPC",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getPlantillasPc",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"marca\") String marca",
+        "business_calls": [
+          {
+            "method": "getPlantillasPc",
+            "arguments": "marca"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "getPlantillaPc",
+        "response_type": "Response",
+        "parameters": "DTOPlantillaPc dto",
+        "business_calls": [
+          {
+            "method": "buscarPlantillaPC",
+            "arguments": "dto"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPlantillaValidadora",
+    "path": "/recursos/plantillaVALIDADORA",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getPlantillasValidadoras",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"marca\") String marca",
+        "business_calls": [
+          {
+            "method": "getPlantillasValidadoras",
+            "arguments": "marca"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "getPlantillaPc",
+        "response_type": "Response",
+        "parameters": "DTOPlantillaValidadora dto",
+        "business_calls": [
+          {
+            "method": "buscarPlantillaValidadora",
+            "arguments": "dto"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoPrestamo",
+    "path": "/recursos/prestamo",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "getParametrosMantenimiento",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "getParametrosMantenimiento",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "prestarEquipoSubagencia",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "prestarEquipoSubagencia",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "devolverEquipoCentral",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "devolverEquipoCentral",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoReparacion",
+    "path": "/recursos/reparacion",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "EquipoRotoParaReparar",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "enviarEquipoAReparar",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "iniciarReparacionEquipo",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "ingresarEquipoAReparar",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "finalizarReparacion",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+        "business_calls": [
+          {
+            "method": "devolverEquipoReparado",
+            "arguments": "equipo, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoService",
+    "path": "/recursos/service",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "buscar",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"id\") Integer id",
+        "business_calls": [
+          {
+            "method": "buscarServices",
+            "arguments": "id"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "POST",
+        "method": "alta",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOService nuevoService",
+        "business_calls": [
+          {
+            "method": "altaService",
+            "arguments": "nuevoService, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificar",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOService service",
+        "business_calls": [
+          {
+            "method": "modificarService",
+            "arguments": "service, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "DELETE",
+        "method": "baja",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOService service",
+        "business_calls": [
+          {
+            "method": "bajaService",
+            "arguments": "service, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoSubAgencia",
+    "path": "/recursos/subagencia",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "buscar",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numero\") Integer numero",
+        "business_calls": [
+          {
+            "method": "buscarSubagencias",
+            "arguments": "numero"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoTiposEquipos",
+    "path": "/recursos/tiposEquipos",
+    "operations": [
+      {
+        "verb": "GET",
+        "method": "devolverTiposEquipos",
+        "response_type": "Response",
+        "parameters": "",
+        "business_calls": [
+          {
+            "method": "retornaTiposEquipos",
+            "arguments": ""
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  },
+  {
+    "class": "RecursoValidadora",
+    "path": "/recursos/validadora",
+    "operations": [
+      {
+        "verb": "POST",
+        "method": "altaValidadora",
+        "response_type": "Response",
+        "parameters": "DTOValidadora nuevaValidadora",
+        "business_calls": [
+          {
+            "method": "altaValidadora",
+            "arguments": "nuevaValidadora"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "GET",
+        "method": "buscarValidadora",
+        "response_type": "Response",
+        "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+        "business_calls": [
+          {
+            "method": "buscarEquipo",
+            "arguments": "numeroSerie"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      },
+      {
+        "verb": "PUT",
+        "method": "modificarValidadora",
+        "response_type": "Response",
+        "parameters": "@Context HttpHeaders headers, DTOValidadora validadora",
+        "business_calls": [
+          {
+            "method": "modificarValidadora",
+            "arguments": "validadora, user"
+          }
+        ],
+        "consumes_json": true,
+        "produces_json": true
+      }
+    ]
+  }
+]

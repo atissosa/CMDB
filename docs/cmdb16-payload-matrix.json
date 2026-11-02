@@ -1,0 +1,3681 @@
+{
+  "reference": "Original DTO source + original Yasson/JSON-B; fixtures independently generated with synthetic values",
+  "property_order": "ignored; keys and JSON value types preserved",
+  "null_output": "null references omitted; empty arrays and primitive defaults retained",
+  "unknown_input": "ignored, as in original JSON-B",
+  "classes": [
+    {
+      "class": "DTODepartamentoCentral",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "textoAmostrar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombre",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "activo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTODepartamentoCentral",
+        "full": {
+          "supported": true,
+          "expected": {
+            "activo": true,
+            "id": 16,
+            "nombre": "Contrato á ñ",
+            "textoAmostrar": "Contrato á ñ",
+            "descripcion": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOEquipo",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "depreciacionMensual",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costoVentaUsado",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "categoriaMantenimiento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioDeCompra",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fechaAlta",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroPrecinto",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugarActual",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugarActual",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOEquipo",
+        "full": {
+          "supported": true,
+          "expected": {
+            "cantidadMesesEnPrestamo": 16,
+            "cantidadVecesPrestado": 16,
+            "categoriaMantenimiento": "Contrato á ñ",
+            "codigo": "Contrato á ñ",
+            "costoVentaUsado": 12.5,
+            "depreciacionMensual": 12.5,
+            "descripcion": "Contrato á ñ",
+            "esPrestamo": true,
+            "estado": "OPERATIVO",
+            "fechaAlta": "2020-02-29",
+            "id": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "idLugarActual": 16,
+            "lugar": "Contrato á ñ",
+            "lugarActual": "Contrato á ñ",
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "numeroPrecinto": 16,
+            "numeroSerie": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "precioDeCompra": 12.5,
+            "tipo": "PC",
+            "usuario": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "yyyy-MM-dd"
+    },
+    {
+      "class": "DTOFiltroEquipo",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "ArrayList<Integer>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "ArrayList<String>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "ArrayList<String>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "boolean",
+          "json_type": "boolean",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "ArrayList<String>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "ArrayList<String>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "ArrayList<String>",
+          "json_type": "array",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "ArrayList<Integer>",
+          "json_type": "array",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOFiltroEquipo",
+        "full": {
+          "supported": true,
+          "expected": {
+            "codigo": [
+              "Contrato á ñ"
+            ],
+            "esPrestamo": true,
+            "estado": [
+              "Contrato á ñ"
+            ],
+            "id": [
+              16,
+              17
+            ],
+            "idLugar": [
+              16,
+              17
+            ],
+            "numeroSerie": [
+              "Contrato á ñ"
+            ],
+            "tipo": [
+              "Contrato á ñ"
+            ],
+            "usuario": [
+              "Contrato á ñ"
+            ]
+          }
+        },
+        "empty": {
+          "supported": false,
+          "legacy_error": "JsonbException"
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {
+            "codigo": [],
+            "esPrestamo": false,
+            "estado": [],
+            "idLugar": [],
+            "numeroSerie": [],
+            "tipo": [],
+            "usuario": []
+          }
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOImpresora",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "depreciacionMensual",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costoVentaUsado",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "categoriaMantenimiento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioDeCompra",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fechaAlta",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroPrecinto",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugarActual",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugarActual",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "opcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "multifuncion",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "ip",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombreHost",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "conexion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOImpresora",
+        "full": {
+          "supported": true,
+          "expected": {
+            "cantidadMesesEnPrestamo": 16,
+            "cantidadVecesPrestado": 16,
+            "categoriaMantenimiento": "Contrato á ñ",
+            "codigo": "Contrato á ñ",
+            "costoVentaUsado": 12.5,
+            "depreciacionMensual": 12.5,
+            "descripcion": "Contrato á ñ",
+            "esPrestamo": true,
+            "estado": "OPERATIVO",
+            "fechaAlta": "2020-02-29",
+            "id": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "idLugarActual": 16,
+            "lugar": "Contrato á ñ",
+            "lugarActual": "Contrato á ñ",
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "numeroPrecinto": 16,
+            "numeroSerie": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "precioDeCompra": 12.5,
+            "tipo": "PC",
+            "usuario": "Contrato á ñ",
+            "conexion": "Contrato á ñ",
+            "ip": "127.0.0.1",
+            "multifuncion": true,
+            "nombreHost": "Contrato á ñ",
+            "opcion": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "yyyy-MM-dd"
+    },
+    {
+      "class": "DTOIncidente",
+      "scope": "not referenced by active endpoints",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fecha",
+          "java_getter_type": "Date",
+          "json_type": "date; unused by current endpoints",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {},
+      "date_format": null
+    },
+    {
+      "class": "DTOItemHistoricoLugar",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigoEquipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fecha",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombreLugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipoLugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigoEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOItemHistoricoLugar",
+        "full": {
+          "supported": true,
+          "expected": {
+            "codigoEquipo": "Contrato á ñ",
+            "codigoEquipoPrestamo": "Contrato á ñ",
+            "descripcion": "Contrato á ñ",
+            "estado": "OPERATIVO",
+            "fecha": "29/02/2020 12:34:56.000",
+            "id": 16,
+            "idEquipo": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "nombreLugar": "Contrato á ñ",
+            "numeroSerieEquipo": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "tipoLugar": "Contrato á ñ",
+            "usuario": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "dd/MM/yyyy HH:mm:ss.SSS"
+    },
+    {
+      "class": "DTOLugar",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "textoAmostrar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombre",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "activo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOLugar",
+        "full": {
+          "supported": true,
+          "expected": {
+            "activo": true,
+            "id": 16,
+            "nombre": "Contrato á ñ",
+            "textoAmostrar": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOOtroEquipo",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "depreciacionMensual",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costoVentaUsado",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "categoriaMantenimiento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioDeCompra",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fechaAlta",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroPrecinto",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugarActual",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugarActual",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOOtroEquipo",
+        "full": {
+          "supported": true,
+          "expected": {
+            "cantidadMesesEnPrestamo": 16,
+            "cantidadVecesPrestado": 16,
+            "categoriaMantenimiento": "Contrato á ñ",
+            "codigo": "Contrato á ñ",
+            "costoVentaUsado": 12.5,
+            "depreciacionMensual": 12.5,
+            "descripcion": "Contrato á ñ",
+            "esPrestamo": true,
+            "estado": "OPERATIVO",
+            "fechaAlta": "2020-02-29",
+            "id": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "idLugarActual": 16,
+            "lugar": "Contrato á ñ",
+            "lugarActual": "Contrato á ñ",
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "numeroPrecinto": 16,
+            "numeroSerie": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "precioDeCompra": 12.5,
+            "tipo": "PC",
+            "usuario": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "yyyy-MM-dd"
+    },
+    {
+      "class": "DTOPC",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "depreciacionMensual",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costoVentaUsado",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "categoriaMantenimiento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioDeCompra",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fechaAlta",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroPrecinto",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugarActual",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugarActual",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "ip",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombreHost",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "procesador",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "memoriaRam",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tamanoDisco",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOPC",
+        "full": {
+          "supported": true,
+          "expected": {
+            "cantidadMesesEnPrestamo": 16,
+            "cantidadVecesPrestado": 16,
+            "categoriaMantenimiento": "Contrato á ñ",
+            "codigo": "Contrato á ñ",
+            "costoVentaUsado": 12.5,
+            "depreciacionMensual": 12.5,
+            "descripcion": "Contrato á ñ",
+            "esPrestamo": true,
+            "estado": "OPERATIVO",
+            "fechaAlta": "2020-02-29",
+            "id": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "idLugarActual": 16,
+            "lugar": "Contrato á ñ",
+            "lugarActual": "Contrato á ñ",
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "numeroPrecinto": 16,
+            "numeroSerie": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "precioDeCompra": 12.5,
+            "tipo": "PC",
+            "usuario": "Contrato á ñ",
+            "ip": "127.0.0.1",
+            "memoriaRam": 16,
+            "nombreHost": "Contrato á ñ",
+            "procesador": "Contrato á ñ",
+            "tamanoDisco": 16
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "yyyy-MM-dd"
+    },
+    {
+      "class": "DTOParametroMantenimientoPrestamo",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "RCantMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "RCantVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "ACantMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "ACantVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "VCantMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "VCantVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOParametroMantenimientoPrestamo",
+        "full": {
+          "supported": true,
+          "expected": {
+            "ACantMesesEnPrestamo": 16,
+            "ACantVecesPrestado": 16,
+            "RCantMesesEnPrestamo": 16,
+            "RCantVecesPrestado": 16,
+            "VCantMesesEnPrestamo": 16,
+            "VCantVecesPrestado": 16
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOPlantillaEquipo",
+      "scope": "abstract base covered through concrete template subclasses",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioCompra",
+          "java_getter_type": "double",
+          "json_type": "number",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {},
+      "date_format": null
+    },
+    {
+      "class": "DTOPlantillaImpresora",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioCompra",
+          "java_getter_type": "double",
+          "json_type": "number",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "conexion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "opcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOPlantillaImpresora",
+        "full": {
+          "supported": true,
+          "expected": {
+            "id": 16,
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "precioCompra": 12.5,
+            "conexion": "Contrato á ñ",
+            "multifuncion": true,
+            "opcion": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0,
+            "multifuncion": false
+          }
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0,
+            "multifuncion": false
+          }
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOPlantillaOtroEquipo",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioCompra",
+          "java_getter_type": "double",
+          "json_type": "number",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOPlantillaOtroEquipo",
+        "full": {
+          "supported": true,
+          "expected": {
+            "id": 16,
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "precioCompra": 12.5
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOPlantillaPc",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioCompra",
+          "java_getter_type": "double",
+          "json_type": "number",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "procesador",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "memoriaRam",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tamanoñoDisco",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOPlantillaPc",
+        "full": {
+          "supported": true,
+          "expected": {
+            "id": 16,
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "precioCompra": 12.5,
+            "memoriaRam": 16,
+            "procesador": "Contrato á ñ",
+            "tamanoñoDisco": 16
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOPlantillaValidadora",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioCompra",
+          "java_getter_type": "double",
+          "json_type": "number",
+          "output_null": "primitive default retained"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOPlantillaValidadora",
+        "full": {
+          "supported": true,
+          "expected": {
+            "id": 16,
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "precioCompra": 12.5
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {
+            "precioCompra": 0.0
+          }
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOReparacion",
+      "scope": "not referenced by active endpoints",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fecha",
+          "java_getter_type": "Date",
+          "json_type": "date; unused by current endpoints",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costo",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "diagnostico",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "resolucion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "equipo",
+          "java_getter_type": "DTOEquipo",
+          "json_type": "object/polymorphic",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {},
+      "date_format": null
+    },
+    {
+      "class": "DTOService",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "textoAmostrar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombre",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "activo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "direccion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOService",
+        "full": {
+          "supported": true,
+          "expected": {
+            "activo": true,
+            "id": 16,
+            "nombre": "Contrato á ñ",
+            "textoAmostrar": "Contrato á ñ",
+            "descripcion": "Contrato á ñ",
+            "direccion": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOSubAgencia",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "textoAmostrar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "nombre",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "activo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numero",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOSubAgencia",
+        "full": {
+          "supported": true,
+          "expected": {
+            "activo": true,
+            "id": 16,
+            "nombre": "Contrato á ñ",
+            "textoAmostrar": "Contrato á ñ",
+            "numero": 16
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOUsuario",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "rol",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "departamento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "activo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOUsuario",
+        "full": {
+          "supported": true,
+          "expected": {
+            "activo": true,
+            "departamento": "Contrato á ñ",
+            "id": 16,
+            "rol": "Contrato á ñ",
+            "usuario": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "DTOValidadora",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "depreciacionMensual",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "costoVentaUsado",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadMesesEnPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "cantidadVecesPrestado",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "categoriaMantenimiento",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "id",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "codigo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerie",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "marca",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "modelo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "precioDeCompra",
+          "java_getter_type": "Double",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "fechaAlta",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "descripcion",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mesesGarantia",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "esPrestamo",
+          "java_getter_type": "Boolean",
+          "json_type": "boolean",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroPrecinto",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "estado",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugar",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugar",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "lugarActual",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idLugarActual",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "usuario",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "idEquipoPrestamo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "numeroSerieEquipoPrestamo",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "DTOValidadora",
+        "full": {
+          "supported": true,
+          "expected": {
+            "cantidadMesesEnPrestamo": 16,
+            "cantidadVecesPrestado": 16,
+            "categoriaMantenimiento": "Contrato á ñ",
+            "codigo": "Contrato á ñ",
+            "costoVentaUsado": 12.5,
+            "depreciacionMensual": 12.5,
+            "descripcion": "Contrato á ñ",
+            "esPrestamo": true,
+            "estado": "OPERATIVO",
+            "fechaAlta": "2020-02-29",
+            "id": 16,
+            "idEquipoPrestamo": 16,
+            "idLugar": 16,
+            "idLugarActual": 16,
+            "lugar": "Contrato á ñ",
+            "lugarActual": "Contrato á ñ",
+            "marca": "Contrato á ñ",
+            "mesesGarantia": 16,
+            "modelo": "Contrato á ñ",
+            "numeroPrecinto": 16,
+            "numeroSerie": "Contrato á ñ",
+            "numeroSerieEquipoPrestamo": "Contrato á ñ",
+            "precioDeCompra": 12.5,
+            "tipo": "PC",
+            "usuario": "Contrato á ñ"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": "yyyy-MM-dd"
+    },
+    {
+      "class": "Mensaje",
+      "scope": "HTTP fixture snapshot",
+      "properties": [
+        {
+          "json_name": "tipo",
+          "java_getter_type": "Tipos",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "texto",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {
+        "class": "Mensaje",
+        "full": {
+          "supported": true,
+          "expected": {
+            "texto": "Contrato á ñ",
+            "tipo": "OK"
+          }
+        },
+        "empty": {
+          "supported": true,
+          "expected": {}
+        },
+        "nullable": {
+          "supported": true,
+          "expected": {}
+        }
+      },
+      "date_format": null
+    },
+    {
+      "class": "Respuesta",
+      "scope": "envelope, 30 business codes",
+      "properties": [
+        {
+          "json_name": "codigo",
+          "java_getter_type": "Integer",
+          "json_type": "number",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "tipo",
+          "java_getter_type": "Tipos",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "mensaje",
+          "java_getter_type": "String",
+          "json_type": "string",
+          "output_null": "omitted"
+        },
+        {
+          "json_name": "retorno",
+          "java_getter_type": "Object",
+          "json_type": "object/polymorphic",
+          "output_null": "omitted"
+        }
+      ],
+      "snapshot_variants": {},
+      "date_format": null
+    }
+  ],
+  "operations": [
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/comboLugares",
+      "controller": "RecursoComboLugares",
+      "method": "todosLosLugaresHomologados",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1338,
+          "caller": "cargarLugaresEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "lugaresHomologados",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#lugaresHomologados",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTODepartamentoCentral | DTOService | DTOSubAgencia>",
+        "dto": [
+          "DTODepartamentoCentral",
+          "DTOService",
+          "DTOSubAgencia"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/conexionesImpresoras",
+      "controller": "RecursoConexionesImpresoras",
+      "method": "devolverConexionesImpresoras",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1130,
+          "caller": "cargarConexionesImpresora"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "retornarConexionesImpresoras",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#retornarConexionesImpresoras",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string>",
+        "fixture": "legacy-catalogs.json#conexionesImpresoras"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/departamento",
+      "controller": "RecursoDepartamentoCentral",
+      "method": "buscar",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "frontend_calls": [
+        {
+          "line": 322,
+          "caller": "cargarDepartamentosCentral"
+        },
+        {
+          "line": 380,
+          "caller": "cargarDepartamento"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarDepartamentosCentral",
+          "arguments": "id"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarDepartamentosCentral",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTODepartamentoCentral>; [] when empty",
+        "dto": "DTODepartamentoCentral"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/departamento",
+      "controller": "RecursoDepartamentoCentral",
+      "method": "alta",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "frontend_calls": [
+        {
+          "line": 410,
+          "caller": "altaDepartamento"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaDepartamentoCentral",
+      "input_dto": [
+        "DTODepartamentoCentral"
+      ],
+      "response_shape": {
+        "retorno": "DTODepartamentoCentral or omitted when null",
+        "dto": "DTODepartamentoCentral"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/departamento",
+      "controller": "RecursoDepartamentoCentral",
+      "method": "modificar",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "frontend_calls": [
+        {
+          "line": 423,
+          "caller": "modificarDepartamento"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarDepartamentoCentral",
+      "input_dto": [
+        "DTODepartamentoCentral"
+      ],
+      "response_shape": {
+        "retorno": "DTODepartamentoCentral or omitted when null",
+        "dto": "DTODepartamentoCentral"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/departamento",
+      "controller": "RecursoDepartamentoCentral",
+      "method": "baja",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "frontend_calls": [
+        {
+          "line": 392,
+          "caller": "borrarDepartamento"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "bajaDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#bajaDepartamentoCentral",
+      "input_dto": [
+        "DTODepartamentoCentral"
+      ],
+      "response_shape": {
+        "retorno": "omitted"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/equipo",
+      "controller": "RecursoEquipo",
+      "method": "buscarEquipos",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipos",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipos",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTOEquipo>; [] when empty",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/equipo",
+      "controller": "RecursoEquipo",
+      "method": "darEquipoDeBaja",
+      "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+      "frontend_calls": [
+        {
+          "line": 936,
+          "caller": "borrarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "darEquipoDeBaja",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#darEquipoDeBaja",
+      "input_dto": [
+        "DTOFiltroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "omitted"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/equipo",
+      "controller": "RecursoEquipo",
+      "method": "asignarParaPrestamo",
+      "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+      "frontend_calls": [
+        {
+          "line": 871,
+          "caller": "asignarEquipoParaPrestamo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "asignarEquipoParaPrestamo",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#asignarEquipoParaPrestamo",
+      "input_dto": [
+        "DTOFiltroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "omitted"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/equipo",
+      "controller": "RecursoEquipo",
+      "method": "despacharEquipo",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 857,
+          "caller": "despacharEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "despacharEquipo",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#despacharEquipo",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/equipos",
+      "controller": "RecursoEquipos",
+      "method": "buscarEquipos",
+      "parameters": "@Context HttpHeaders headers, DTOFiltroEquipo dtoFiltroEquipo",
+      "frontend_calls": [
+        {
+          "line": 802,
+          "caller": "cargarEquipos"
+        },
+        {
+          "line": 1370,
+          "caller": "cambioSubagenciaPrestamo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipos",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipos",
+      "input_dto": [
+        "DTOFiltroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "array<DTOEquipo>; [] when empty",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/estadosEquipos",
+      "controller": "RecursoEstadosEquipos",
+      "method": "devolverEstadosEquipos",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1098,
+          "caller": "cargarEstadosEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "retornarEstadosEquipos",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#retornarEstadosEquipos",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string>",
+        "fixture": "legacy-catalogs.json#estadosEquipos"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/historicoEquipo",
+      "controller": "RecursoHistoricoEquipo",
+      "method": "getHistoricoEquipos",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [
+        {
+          "line": 1459,
+          "caller": "mostrarModalHistoricoEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarHistoricoEquipos",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarHistoricoEquipos",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTOItemHistoricoLugar>; [] when empty",
+        "dto": "DTOItemHistoricoLugar"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/impresora",
+      "controller": "RecursoImpresora",
+      "method": "altaImpresora",
+      "parameters": "DTOImpresora nuevaImpresora",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaImpresora",
+          "arguments": "nuevaImpresora"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaImpresora",
+      "input_dto": [
+        "DTOImpresora"
+      ],
+      "response_shape": {
+        "retorno": "DTOImpresora or omitted when null",
+        "dto": "DTOImpresora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/impresora",
+      "controller": "RecursoImpresora",
+      "method": "buscarImpresora",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "DTOEquipo or omitted when null",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/impresora",
+      "controller": "RecursoImpresora",
+      "method": "modificarImpresora",
+      "parameters": "@Context HttpHeaders headers, DTOImpresora impresora",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarImpresora",
+          "arguments": "impresora, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarImpresora",
+      "input_dto": [
+        "DTOImpresora"
+      ],
+      "response_shape": {
+        "retorno": "DTOImpresora or omitted when null",
+        "dto": "DTOImpresora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/login",
+      "controller": "RecursoLogin",
+      "method": "login",
+      "parameters": "@Context HttpHeaders headers",
+      "frontend_calls": [
+        {
+          "line": 306,
+          "caller": "login"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "login",
+          "arguments": "credencialesSeparadas[0], credencialesSeparadas[1]"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#login",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "DTOUsuario or omitted when null",
+        "dto": "DTOUsuario"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/login",
+      "controller": "RecursoLogin",
+      "method": "logout",
+      "parameters": "@Context HttpHeaders headers",
+      "frontend_calls": [
+        {
+          "line": 284,
+          "caller": "cerrarSesion"
+        }
+      ],
+      "produces_json": false,
+      "business_calls": [
+        {
+          "method": "logout",
+          "arguments": "credencialesSeparadas[0]"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#logout",
+      "input_dto": [],
+      "response_shape": {
+        "http_status": 204,
+        "body": "empty; controller returns void"
+      },
+      "envelope": null
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/lugar",
+      "controller": "RecursoLugar",
+      "method": "buscarEquipos",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "frontend_calls": [],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getLugares",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getLugares",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTODepartamentoCentral | DTOService | DTOSubAgencia>",
+        "dto": [
+          "DTODepartamentoCentral",
+          "DTOService",
+          "DTOSubAgencia"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "controller": "RecursoMantenimientoPrestamos",
+      "method": "listadoMantenimiento",
+      "parameters": "@Context HttpHeaders headers",
+      "frontend_calls": [
+        {
+          "line": 658,
+          "caller": "cargarListadoMantenimientoPrestamos"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "listadoMantenimientoEquiposDePrestamo",
+          "arguments": "credencialesSeparadas[0]"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#listadoMantenimientoEquiposDePrestamo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTOPC | DTOImpresora | DTOOtroEquipo | DTOValidadora>; [] when empty",
+        "dto": "DTOEquipo concrete subtype"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "controller": "RecursoMantenimientoPrestamos",
+      "method": "modificarParametrosMantenimientoPrestamo",
+      "parameters": "DTOParametroMantenimientoPrestamo dto",
+      "frontend_calls": [
+        {
+          "line": 677,
+          "caller": "modificarParametrosMantenimientoPrestamo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarParametrosMantenimientoPrestamos",
+          "arguments": "dto"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarParametrosMantenimientoPrestamos",
+      "input_dto": [
+        "DTOParametroMantenimientoPrestamo"
+      ],
+      "response_shape": {
+        "retorno": "omitted"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/opcionesImpresoras",
+      "controller": "RecursoOpcionesImpresoras",
+      "method": "devolverOpcionesImpresoras",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1114,
+          "caller": "cargarOpcionesImpresora"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "retornarOpcionesImpresoras",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#retornarOpcionesImpresoras",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string>",
+        "fixture": "legacy-catalogs.json#opcionesImpresoras"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/otroEquipo",
+      "controller": "RecursoOtroEquipo",
+      "method": "altaOtroEquipo",
+      "parameters": "DTOOtroEquipo nuevoOtroEquipo",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaOtroEquipo",
+          "arguments": "nuevoOtroEquipo"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaOtroEquipo",
+      "input_dto": [
+        "DTOOtroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOOtroEquipo or omitted when null",
+        "dto": "DTOOtroEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/otroEquipo",
+      "controller": "RecursoOtroEquipo",
+      "method": "buscarOtroEquipo",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "DTOEquipo or omitted when null",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/otroEquipo",
+      "controller": "RecursoOtroEquipo",
+      "method": "modificarOtroEquipo",
+      "parameters": "@Context HttpHeaders headers, DTOOtroEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarOtroEquipo",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarOtroEquipo",
+      "input_dto": [
+        "DTOOtroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOOtroEquipo or omitted when null",
+        "dto": "DTOOtroEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/pc",
+      "controller": "RecursoPC",
+      "method": "altaPC",
+      "parameters": "DTOPC nuevaPC",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaPc",
+          "arguments": "nuevaPC"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaPc",
+      "input_dto": [
+        "DTOPC"
+      ],
+      "response_shape": {
+        "retorno": "DTOPC or omitted when null",
+        "dto": "DTOPC"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/pc",
+      "controller": "RecursoPC",
+      "method": "buscarPc",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "DTOEquipo or omitted when null",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/pc",
+      "controller": "RecursoPC",
+      "method": "modificarPC",
+      "parameters": "@Context HttpHeaders headers, DTOPC pc",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarPC",
+          "arguments": "pc, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarPC",
+      "input_dto": [
+        "DTOPC"
+      ],
+      "response_shape": {
+        "retorno": "DTOPC or omitted when null",
+        "dto": "DTOPC"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "controller": "RecursoPlantillaImpresora",
+      "method": "getPlantillasImpresora",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getPlantillasImpresoras",
+          "arguments": "marca"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getPlantillasImpresoras",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string> when marca absent/empty; array<DTOPlantillaImpresora> when marca provided; [] when no match",
+        "dto": "DTOPlantillaImpresora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "controller": "RecursoPlantillaImpresora",
+      "method": "getPlantillaImpresora",
+      "parameters": "DTOPlantillaImpresora dto",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarPlantillaImpresora",
+          "arguments": "dto"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarPlantillaImpresora",
+      "input_dto": [
+        "DTOPlantillaImpresora"
+      ],
+      "response_shape": {
+        "retorno": "DTOPlantillaImpresora or omitted when null",
+        "dto": "DTOPlantillaImpresora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "controller": "RecursoPlantillaOtroEquipo",
+      "method": "getPlantillasOtroEquipo",
+      "parameters": "@QueryParam(\"marca\") String marca, @QueryParam(\"tipo\") String tipo",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getPlantillasOtroEquipo",
+          "arguments": "tipo, marca"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getPlantillasOtroEquipo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string> when marca absent/empty; array<DTOPlantillaOtroEquipo> when marca provided; [] when no match",
+        "dto": "DTOPlantillaOtroEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "controller": "RecursoPlantillaOtroEquipo",
+      "method": "getPlantillaOtroEquipo",
+      "parameters": "DTOPlantillaOtroEquipo dto",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarPlantillaOtroEquipo",
+          "arguments": "dto"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarPlantillaOtroEquipo",
+      "input_dto": [
+        "DTOPlantillaOtroEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOPlantillaOtroEquipo or omitted when null",
+        "dto": "DTOPlantillaOtroEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/plantillaPC",
+      "controller": "RecursoPlantillaPc",
+      "method": "getPlantillasPc",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getPlantillasPc",
+          "arguments": "marca"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getPlantillasPc",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string> when marca absent/empty; array<DTOPlantillaPc> when marca provided; [] when no match",
+        "dto": "DTOPlantillaPc"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/plantillaPC",
+      "controller": "RecursoPlantillaPc",
+      "method": "getPlantillaPc",
+      "parameters": "DTOPlantillaPc dto",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarPlantillaPC",
+          "arguments": "dto"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarPlantillaPC",
+      "input_dto": [
+        "DTOPlantillaPc"
+      ],
+      "response_shape": {
+        "retorno": "DTOPlantillaPc or omitted when null",
+        "dto": "DTOPlantillaPc"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "controller": "RecursoPlantillaValidadora",
+      "method": "getPlantillasValidadoras",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getPlantillasValidadoras",
+          "arguments": "marca"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getPlantillasValidadoras",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string> when marca absent/empty; array<DTOPlantillaValidadora> when marca provided; [] when no match",
+        "dto": "DTOPlantillaValidadora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "controller": "RecursoPlantillaValidadora",
+      "method": "getPlantillaPc",
+      "parameters": "DTOPlantillaValidadora dto",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarPlantillaValidadora",
+          "arguments": "dto"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarPlantillaValidadora",
+      "input_dto": [
+        "DTOPlantillaValidadora"
+      ],
+      "response_shape": {
+        "retorno": "DTOPlantillaValidadora or omitted when null",
+        "dto": "DTOPlantillaValidadora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/prestamo",
+      "controller": "RecursoPrestamo",
+      "method": "getParametrosMantenimiento",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1507,
+          "caller": "mostrarModalParametros"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "getParametrosMantenimiento",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#getParametrosMantenimiento",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<number>, length 6",
+        "fixture": "legacy-null-lists.json#maintenance_expected"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/prestamo",
+      "controller": "RecursoPrestamo",
+      "method": "prestarEquipoSubagencia",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 1395,
+          "caller": "prestarEquipoSubagencia"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "prestarEquipoSubagencia",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#prestarEquipoSubagencia",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/prestamo",
+      "controller": "RecursoPrestamo",
+      "method": "devolverEquipoCentral",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 1412,
+          "caller": "devolverEquipoCentral"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "devolverEquipoCentral",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#devolverEquipoCentral",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/reparacion",
+      "controller": "RecursoReparacion",
+      "method": "EquipoRotoParaReparar",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 843,
+          "caller": "marcarEquipoComoRoto"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "enviarEquipoAReparar",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#enviarEquipoAReparar",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/reparacion",
+      "controller": "RecursoReparacion",
+      "method": "iniciarReparacionEquipo",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 829,
+          "caller": "iniciarReparacionEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "ingresarEquipoAReparar",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#ingresarEquipoAReparar",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/reparacion",
+      "controller": "RecursoReparacion",
+      "method": "finalizarReparacion",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "frontend_calls": [
+        {
+          "line": 815,
+          "caller": "finalizarReparacionEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "devolverEquipoReparado",
+          "arguments": "equipo, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#devolverEquipoReparado",
+      "input_dto": [
+        "DTOEquipo"
+      ],
+      "response_shape": {
+        "retorno": "DTOEquipo input echoed, or omitted when null",
+        "dto": "DTOEquipo"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/service",
+      "controller": "RecursoService",
+      "method": "buscar",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "frontend_calls": [
+        {
+          "line": 438,
+          "caller": "cargarServicios"
+        },
+        {
+          "line": 499,
+          "caller": "cargarService"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarServices",
+          "arguments": "id"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarServices",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTOService>; [] when empty",
+        "dto": "DTOService"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/service",
+      "controller": "RecursoService",
+      "method": "alta",
+      "parameters": "@Context HttpHeaders headers, DTOService nuevoService",
+      "frontend_calls": [
+        {
+          "line": 530,
+          "caller": "altaService"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaService",
+          "arguments": "nuevoService, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaService",
+      "input_dto": [
+        "DTOService"
+      ],
+      "response_shape": {
+        "retorno": "DTOService or omitted when null",
+        "dto": "DTOService"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/service",
+      "controller": "RecursoService",
+      "method": "modificar",
+      "parameters": "@Context HttpHeaders headers, DTOService service",
+      "frontend_calls": [
+        {
+          "line": 544,
+          "caller": "modificarService"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarService",
+          "arguments": "service, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarService",
+      "input_dto": [
+        "DTOService"
+      ],
+      "response_shape": {
+        "retorno": "DTOService or omitted when null",
+        "dto": "DTOService"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "DELETE",
+      "path": "/cmdb-backend/recursos/service",
+      "controller": "RecursoService",
+      "method": "baja",
+      "parameters": "@Context HttpHeaders headers, DTOService service",
+      "frontend_calls": [
+        {
+          "line": 511,
+          "caller": "borrarService"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "bajaService",
+          "arguments": "service, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#bajaService",
+      "input_dto": [
+        "DTOService"
+      ],
+      "response_shape": {
+        "retorno": "omitted"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/subagencia",
+      "controller": "RecursoSubAgencia",
+      "method": "buscar",
+      "parameters": "@QueryParam(\"numero\") Integer numero",
+      "frontend_calls": [
+        {
+          "line": 559,
+          "caller": "cargarSubagencias"
+        },
+        {
+          "line": 1352,
+          "caller": "mostrarModalPrestarEquipoSubagencia"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarSubagencias",
+          "arguments": "numero"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarSubagencias",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<DTOSubAgencia>; [] when empty",
+        "dto": "DTOSubAgencia"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/tiposEquipos",
+      "controller": "RecursoTiposEquipos",
+      "method": "devolverTiposEquipos",
+      "parameters": "",
+      "frontend_calls": [
+        {
+          "line": 1082,
+          "caller": "cargarTiposEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "retornaTiposEquipos",
+          "arguments": ""
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#retornaTiposEquipos",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "array<string>",
+        "fixture": "legacy-catalogs.json#tiposEquipos"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "POST",
+      "path": "/cmdb-backend/recursos/validadora",
+      "controller": "RecursoValidadora",
+      "method": "altaValidadora",
+      "parameters": "DTOValidadora nuevaValidadora",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "altaValidadora",
+          "arguments": "nuevaValidadora"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#altaValidadora",
+      "input_dto": [
+        "DTOValidadora"
+      ],
+      "response_shape": {
+        "retorno": "DTOValidadora or omitted when null",
+        "dto": "DTOValidadora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "GET",
+      "path": "/cmdb-backend/recursos/validadora",
+      "controller": "RecursoValidadora",
+      "method": "buscarValidadora",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#buscarEquipo",
+      "input_dto": [],
+      "response_shape": {
+        "retorno": "DTOEquipo or omitted when null",
+        "dto": "DTOEquipo",
+        "subtypes": [
+          "DTOPC",
+          "DTOImpresora",
+          "DTOOtroEquipo",
+          "DTOValidadora"
+        ]
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    },
+    {
+      "verb": "PUT",
+      "path": "/cmdb-backend/recursos/validadora",
+      "controller": "RecursoValidadora",
+      "method": "modificarValidadora",
+      "parameters": "@Context HttpHeaders headers, DTOValidadora validadora",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "produces_json": true,
+      "business_calls": [
+        {
+          "method": "modificarValidadora",
+          "arguments": "validadora, user"
+        }
+      ],
+      "source": "src/main/java/com/atissosa/cmdb_backend/logic/Sistema.java#modificarValidadora",
+      "input_dto": [
+        "DTOValidadora"
+      ],
+      "response_shape": {
+        "retorno": "DTOValidadora or omitted when null",
+        "dto": "DTOValidadora"
+      },
+      "envelope": "Respuesta: codigo number; tipo enum string; mensaje string; retorno as described, omitted if null",
+      "business_http_mapping": "legacy-payloads.json#envelopes: 30 original codes, exact messages/types/statuses"
+    }
+  ],
+  "special_contracts": {
+    "maintenance_input": "six capitalized integer properties, quoted numbers accepted",
+    "maintenance_output": "retorno: Integer[6], ordered R months/R times/A months/A times/V months/V times",
+    "template_pc_disk": "tamanoñoDisco, preserved including ñ",
+    "filter": "legacy setters and nullable getter behavior retained; see frozen acceptance fixtures",
+    "transport_errors": "HTTP 400 text/plain UTF-8; constant JSON inválido.; no parser internals"
+  }
+}

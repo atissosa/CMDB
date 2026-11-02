@@ -1,0 +1,458 @@
+[
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/FormatearCodigosDeEquiposEnBD.java",
+    "target": "src/test/java/Equipo/FormatearCodigosDeEquiposEnBDTest.java",
+    "original_class": "FormatearCodigosDeEquiposEnBD",
+    "class": "FormatearCodigosDeEquiposEnBDTest",
+    "package": "Equipo",
+    "test_methods": [
+      "setUp"
+    ],
+    "original_sha256": "205224091c7e5ca36c8f207995e4224e1fb1e9c194d57818db3b5f7ea629d255"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/Impresora/pruebaAltaImpresora.java",
+    "target": "src/test/java/Equipo/Impresora/pruebaAltaImpresoraTest.java",
+    "original_class": "pruebaAltaImpresora",
+    "class": "pruebaAltaImpresoraTest",
+    "package": "Equipo.Impresora",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaAltaConImpresoraExistenteEnSistema",
+      "pruebaAltaImpresoraCorrecta"
+    ],
+    "original_sha256": "bd78f592b1e6e4cd825ec8468c08315bc374f81c10709a32eb524abded2313aa"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/Impresora/pruebaModificarImpresora.java",
+    "target": "src/test/java/Equipo/Impresora/pruebaModificarImpresoraTest.java",
+    "original_class": "pruebaModificarImpresora",
+    "class": "pruebaModificarImpresoraTest",
+    "package": "Equipo.Impresora",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "2993bef7d9e9a382caff64e5f50af55770c9aaa6827011c9c1d1d004ea86ee47"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/OtroEquipo/pruebaAltaOtroEquipo.java",
+    "target": "src/test/java/Equipo/OtroEquipo/pruebaAltaOtroEquipoTest.java",
+    "original_class": "pruebaAltaOtroEquipo",
+    "class": "pruebaAltaOtroEquipoTest",
+    "package": "Equipo.OtroEquipo",
+    "test_methods": [
+      "pruebaAltaOtroEquipoConDtoNulo",
+      "pruebaAltaOtroEquipoConTodosLosDatosNulos",
+      "pruebaAltaOtroEquipoConTodosLosDatosVacios",
+      "pruebaAltaOtroEquipoCorrecta",
+      "pruebaAltaConOtroEquipoExistenteEnSistema"
+    ],
+    "original_sha256": "3594351f0adf740decacd95c3221eec484d1add004e0cc826de780c12e733bdb"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/OtroEquipo/pruebaModificarOtroEquipo.java",
+    "target": "src/test/java/Equipo/OtroEquipo/pruebaModificarOtroEquipoTest.java",
+    "original_class": "pruebaModificarOtroEquipo",
+    "class": "pruebaModificarOtroEquipoTest",
+    "package": "Equipo.OtroEquipo",
+    "test_methods": [
+      "pruebaModificarOtroEquipoConDtoNulo",
+      "pruebaModificarOtroEquipoConTodosLosDatosNulos",
+      "pruebaModificarOtroEquipoConTodosLosDatosVacios",
+      "pruebaModificarConOtroEquipoInexistenteEnSistema",
+      "pruebaModificarCorrectaOtroEquipoExistente"
+    ],
+    "original_sha256": "dcf3650c299f2fdbac9371daf722e6992b59a61a8337837e6a4b3eeccddd587a"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/PC/pruebaAltaPc.java",
+    "target": "src/test/java/Equipo/PC/pruebaAltaPcTest.java",
+    "original_class": "pruebaAltaPc",
+    "class": "pruebaAltaPcTest",
+    "package": "Equipo.PC",
+    "test_methods": [
+      "pruebaAltaPcConDtoNulo",
+      "pruebaAltaPcConTodosLosDatosNulos",
+      "pruebaAltaPcConTodosLosDatosVacios",
+      "pruebaAltaPcIpNoValida",
+      "pruebaAltaPcCorrecta",
+      "pruebaAltaConPcExistenteEnSistema"
+    ],
+    "original_sha256": "d787e2fcd7f551b4a90b8efcc6160ac4e70ddd747504264f3a4b9eaa4f820b76"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/PC/pruebaModificarPC.java",
+    "target": "src/test/java/Equipo/PC/pruebaModificarPCTest.java",
+    "original_class": "pruebaModificarPC",
+    "class": "pruebaModificarPCTest",
+    "package": "Equipo.PC",
+    "test_methods": [
+      "pruebaModificarPCConDtoNulo",
+      "pruebaModificarPCConTodosLosDatosNulos",
+      "pruebaModificarPCConTodosLosDatosVacios",
+      "pruebaModificarConPCInexistenteEnSistema",
+      "pruebaModificarCorrectaPCExistente"
+    ],
+    "original_sha256": "35bf8e9cba61a603aeb13495cb9cf545da078b941f1d76feb81bc04a1b6077dc"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/Validadora/pruebaAltaValidadora.java",
+    "target": "src/test/java/Equipo/Validadora/pruebaAltaValidadoraTest.java",
+    "original_class": "pruebaAltaValidadora",
+    "class": "pruebaAltaValidadoraTest",
+    "package": "Equipo.Validadora",
+    "test_methods": [
+      "pruebaAltaValidadoraConDtoNulo",
+      "pruebaAltaValidadoraConTodosLosDatosNulos",
+      "pruebaAltaValidadoraConTodosLosDatosVacios",
+      "pruebaAltaValidadoraCorrecta",
+      "pruebaAltaConValidadoraExistenteEnSistema"
+    ],
+    "original_sha256": "2ff1f9ea3144f04cbb671d4f949665f2b1c8a47a161c2aaee00ace110f3963d0"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/Validadora/pruebaModificarValidadora.java",
+    "target": "src/test/java/Equipo/Validadora/pruebaModificarValidadoraTest.java",
+    "original_class": "pruebaModificarValidadora",
+    "class": "pruebaModificarValidadoraTest",
+    "package": "Equipo.Validadora",
+    "test_methods": [
+      "pruebaModificarValidadoraConDtoNulo",
+      "pruebaModificarValidadoraConTodosLosDatosNulos",
+      "pruebaModificarValidadoraConTodosLosDatosVacios",
+      "pruebaModificarConValidadoraInexistenteEnSistema",
+      "pruebaModificarCorrectaValidadoraExistente"
+    ],
+    "original_sha256": "b1cb0ca8f3b6d00d601cefac892a62bc359677f41becbd27f3b44a79840528fb"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaAsignarEquipoParaPrestamo.java",
+    "target": "src/test/java/Equipo/pruebaAsignarEquipoParaPrestamoTest.java",
+    "original_class": "pruebaAsignarEquipoParaPrestamo",
+    "class": "pruebaAsignarEquipoParaPrestamoTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "a141c3b2146a54dad7db68dfa0f4359d8da7ac198b00702fb320eb186e20e92f"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaAsociarPrestamoAlEquipoRoto.java",
+    "target": "src/test/java/Equipo/pruebaAsociarPrestamoAlEquipoRotoTest.java",
+    "original_class": "pruebaAsociarPrestamoAlEquipoRoto",
+    "class": "pruebaAsociarPrestamoAlEquipoRotoTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaAsociarEquipoRotoConPrestamo",
+      "pruebaConDatosNulos",
+      "pruebaRecuperarEquipoAutomaticamenteCuandoElEquipoRotoSeRepara"
+    ],
+    "original_sha256": "03f2f64d7fb17b5f024dd05d6c64e70660295235e3a52f25adc3624dfbd6c482"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaBajaEquipo.java",
+    "target": "src/test/java/Equipo/pruebaBajaEquipoTest.java",
+    "original_class": "pruebaBajaEquipo",
+    "class": "pruebaBajaEquipoTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "d0bd2897a59dcba1575a767c10a9c0a83225c3d2c4dfb2e8610dd76c5d278819"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaBuscarEquipos.java",
+    "target": "src/test/java/Equipo/pruebaBuscarEquiposTest.java",
+    "original_class": "pruebaBuscarEquipos",
+    "class": "pruebaBuscarEquiposTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "ed0eadcc19f2bf6df8fc2621db50ff76208bc80586a2ff7f73c150d9a1d6d3f1"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaDevolverEquipoACentral.java",
+    "target": "src/test/java/Equipo/pruebaDevolverEquipoACentralTest.java",
+    "original_class": "pruebaDevolverEquipoACentral",
+    "class": "pruebaDevolverEquipoACentralTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "8545a1f204aa3a2c4f23566be3d1e0fb16407e275ac50c0e495bdd8a21df7447"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaFinalizarReparacion.java",
+    "target": "src/test/java/Equipo/pruebaFinalizarReparacionTest.java",
+    "original_class": "pruebaFinalizarReparacion",
+    "class": "pruebaFinalizarReparacionTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "89aeb7f05a6c5c60d80a9d8e93209618163d321206c70c523e8a6b4dd31e112b"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaIngresoEquipoAreparacion.java",
+    "target": "src/test/java/Equipo/pruebaIngresoEquipoAreparacionTest.java",
+    "original_class": "pruebaIngresoEquipoAreparacion",
+    "class": "pruebaIngresoEquipoAreparacionTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "a6f1d715ef79c2634a9bde28209a368c9e59d3d4563ad7b0885e1044d3d11cb6"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaMantenimientoPrestamos.java",
+    "target": "src/test/java/Equipo/pruebaMantenimientoPrestamosTest.java",
+    "original_class": "pruebaMantenimientoPrestamos",
+    "class": "pruebaMantenimientoPrestamosTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquiposEnSistema"
+    ],
+    "original_sha256": "0bde92cfc5d8a23c8bd2b7c3f0266e4f5ed8de12c1b891f8567f7d8b198919cb"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Equipo/pruebaPrestarEquipo.java",
+    "target": "src/test/java/Equipo/pruebaPrestarEquipoTest.java",
+    "original_class": "pruebaPrestarEquipo",
+    "class": "pruebaPrestarEquipoTest",
+    "package": "Equipo",
+    "test_methods": [
+      "pruebaConDTONulo",
+      "pruebaConDatosNulos",
+      "pruebaConValoresVacios",
+      "pruebaConEquipoInexistente",
+      "pruebaConEquipoExistente"
+    ],
+    "original_sha256": "8c727b72bf279cf8b20d3a7fc08600498f27355a35c72cec2c275587eedf7620"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/DepartamentoCentral/pruebaAltaDepartamentoCentral.java",
+    "target": "src/test/java/Lugar/DepartamentoCentral/pruebaAltaDepartamentoCentralTest.java",
+    "original_class": "pruebaAltaDepartamentoCentral",
+    "class": "pruebaAltaDepartamentoCentralTest",
+    "package": "Lugar.DepartamentoCentral",
+    "test_methods": [
+      "pruebaAltaDepartamentoConDtoNulo",
+      "pruebaAltaDepartamentoConTodosLosDatosNulos",
+      "pruebaAltaDepartamentoConTodosLosDatosVacios",
+      "pruebaAltaDepartamentoCorrecto",
+      "pruebaAltaConDepartamentoExistenteEnSistema"
+    ],
+    "original_sha256": "e342ea104a32ac39a504d8fb0f96272bbe006e53c4904277086f7d5198461770"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/DepartamentoCentral/pruebaBajaDepartamentoCentral.java",
+    "target": "src/test/java/Lugar/DepartamentoCentral/pruebaBajaDepartamentoCentralTest.java",
+    "original_class": "pruebaBajaDepartamentoCentral",
+    "class": "pruebaBajaDepartamentoCentralTest",
+    "package": "Lugar.DepartamentoCentral",
+    "test_methods": [
+      "pruebaBajaDepartamentoConDtoNulo",
+      "pruebaBajaDepartamentoConTodosLosDatosNulos",
+      "pruebaBajaDepartamentoConTodosLosDatosVacios",
+      "pruebaBajaConDepartamentoInexistenteEnSistema",
+      "pruebaBajaConDepartamentoExistenteEnSistema"
+    ],
+    "original_sha256": "5c4f20e6531a7d56d04d4a8b1d2ddbc8706e83a8584e7974fa26b9a5b3af41e5"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/DepartamentoCentral/pruebaBuscarDepartamentoCentral.java",
+    "target": "src/test/java/Lugar/DepartamentoCentral/pruebaBuscarDepartamentoCentralTest.java",
+    "original_class": "pruebaBuscarDepartamentoCentral",
+    "class": "pruebaBuscarDepartamentoCentralTest",
+    "package": "Lugar.DepartamentoCentral",
+    "test_methods": [
+      "pruebaConIdIgualAcero",
+      "pruebaConIdMenorQueCero",
+      "pruebaConIdInexistente",
+      "pruebaConIdExistente"
+    ],
+    "original_sha256": "1d974b738847bee663304194fa89bfc16ab849ecb0d49aa57e3a0843c9ff5f57"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/DepartamentoCentral/pruebaModificarDepartamentoCentral.java",
+    "target": "src/test/java/Lugar/DepartamentoCentral/pruebaModificarDepartamentoCentralTest.java",
+    "original_class": "pruebaModificarDepartamentoCentral",
+    "class": "pruebaModificarDepartamentoCentralTest",
+    "package": "Lugar.DepartamentoCentral",
+    "test_methods": [
+      "pruebaModificarDepartamentoCentralConDtoNulo",
+      "pruebaModificarDepartamentoCentralConTodosLosDatosNulos",
+      "pruebaModificarDepartamentoCentralConTodosLosDatosVacios",
+      "pruebaModificarConDepartamentoCentralInexistenteEnSistema",
+      "pruebaModificarConDepartamentoCentralExistenteEnSistema"
+    ],
+    "original_sha256": "ad5e4ad03324d9447f1869a261decb6b22d035de85738d421e6edccef6b05e52"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/Service/pruebaAltaService.java",
+    "target": "src/test/java/Lugar/Service/pruebaAltaServiceTest.java",
+    "original_class": "pruebaAltaService",
+    "class": "pruebaAltaServiceTest",
+    "package": "Lugar.Service",
+    "test_methods": [
+      "pruebaAltaServiceConDtoNulo",
+      "pruebaAltaServiceConTodosLosDatosNulos",
+      "pruebaAltaImpresoraConTodosLosDatosVacios",
+      "pruebaAltaServiceCorrecto",
+      "pruebaAltaConServiceExistenteEnSistema"
+    ],
+    "original_sha256": "92dd1877fddb226c94abf20c6b2a200093063d9c9d5188c5ca4ddc5348cc8ffb"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/Service/pruebaBajaService.java",
+    "target": "src/test/java/Lugar/Service/pruebaBajaServiceTest.java",
+    "original_class": "pruebaBajaService",
+    "class": "pruebaBajaServiceTest",
+    "package": "Lugar.Service",
+    "test_methods": [
+      "pruebaBajaServiceConDtoNulo",
+      "pruebaBajaServiceConTodosLosDatosNulos",
+      "pruebaBajaServiceConTodosLosDatosVacios",
+      "pruebaBajaConServiceInexistenteEnSistema",
+      "pruebaBajaConServiceExistenteEnSistema"
+    ],
+    "original_sha256": "004388db508a159d09ebb332877bdf35a50a19b92653076640bdb4e87d11b61b"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/Service/pruebaBuscarServices.java",
+    "target": "src/test/java/Lugar/Service/pruebaBuscarServicesTest.java",
+    "original_class": "pruebaBuscarServices",
+    "class": "pruebaBuscarServicesTest",
+    "package": "Lugar.Service",
+    "test_methods": [
+      "pruebaConIdIgualAcero",
+      "pruebaConIdMenorQueCero",
+      "pruebaConIdInexistente",
+      "pruebaConIdExistente"
+    ],
+    "original_sha256": "e3c00826a4a19f03c01078f4938195e8f5c24dadefe66d2a4e7220f5065a4ab4"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/Service/pruebaModificarService.java",
+    "target": "src/test/java/Lugar/Service/pruebaModificarServiceTest.java",
+    "original_class": "pruebaModificarService",
+    "class": "pruebaModificarServiceTest",
+    "package": "Lugar.Service",
+    "test_methods": [
+      "pruebaModificarServiceConDtoNulo",
+      "pruebaModificarServiceConTodosLosDatosNulos",
+      "pruebaModificarServiceConTodosLosDatosVacios",
+      "pruebaModificarConServiceInexistenteEnSistema",
+      "pruebaModificarConServiceExistenteEnSistema"
+    ],
+    "original_sha256": "7792605fa8d2b4e1f0fe2448466af9f2bbfd2f945568c53c8765dc7364125c1f"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Lugar/Subagencia/pruebaBuscarSubAgencia.java",
+    "target": "src/test/java/Lugar/Subagencia/pruebaBuscarSubAgenciaTest.java",
+    "original_class": "pruebaBuscarSubAgencia",
+    "class": "pruebaBuscarSubAgenciaTest",
+    "package": "Lugar.Subagencia",
+    "test_methods": [
+      "pruebaConNumeroIgualAcero",
+      "pruebaConNumeroMenorQueCero",
+      "pruebaConNumeroInexistente",
+      "pruebaConNumeroExistente"
+    ],
+    "original_sha256": "31cf763becd3df2a71317af5f90f349796004fc2acafa55c9fd84e19b4565379"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/Usuario/login/pruebaLogin.java",
+    "target": "src/test/java/Usuario/login/pruebaLoginTest.java",
+    "original_class": "pruebaLogin",
+    "class": "pruebaLoginTest",
+    "package": "Usuario.login",
+    "test_methods": [
+      "pruebaConDatosNulos",
+      "pruebaConDatosVacios",
+      "pruebaConUsuarioInexistente",
+      "pruebaConUsuarioExistenteYcontraseñaIncorrecta",
+      "pruebaConUsuarioYcontraseñaCorrectos"
+    ],
+    "original_sha256": "b4505019b121f5c5d58211cfec9029468700905eb8974aff352998f60745e306"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/conjuntoDePruebas/ejecutarTodasLasPruebasDeBusquedas.java",
+    "target": "src/test/java/conjuntoDePruebas/ejecutarTodasLasPruebasDeBusquedas.java",
+    "original_class": "ejecutarTodasLasPruebasDeBusquedas",
+    "class": "ejecutarTodasLasPruebasDeBusquedas",
+    "package": "conjuntoDePruebas",
+    "test_methods": [],
+    "original_sha256": "790d56ea0fc8d99f449f525585e5a8d5d121963c3b27db4d3184a86ac2e3a028"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/utilidades/EntornoTesting.java",
+    "target": "src/test/java/utilidades/EntornoTesting.java",
+    "original_class": "EntornoTesting",
+    "class": "EntornoTesting",
+    "package": "utilidades",
+    "test_methods": [],
+    "original_sha256": "8e9dc679e58e1e56163b0fffc34aee110f0a5add4c83813e63e2742745cade35"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/utilidades/FuncionalidadesComunes.java",
+    "target": "src/test/java/utilidades/FuncionalidadesComunes.java",
+    "original_class": "FuncionalidadesComunes",
+    "class": "FuncionalidadesComunes",
+    "package": "utilidades",
+    "test_methods": [],
+    "original_sha256": "382df95588961d258788a6c4c180fda05c7e256401a44a5053264cdcb8369d50"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/utilidades/GeneraDocumentacionTesting.java",
+    "target": "src/test/java/utilidades/GeneraDocumentacionTestingTest.java",
+    "original_class": "GeneraDocumentacionTesting",
+    "class": "GeneraDocumentacionTestingTest",
+    "package": "utilidades",
+    "test_methods": [
+      "recorrerDirectorioYgenerarDoc"
+    ],
+    "original_sha256": "6222137187b8c76f6f2f38cda9255a881b843381cc748dc77165378bd978995b"
+  },
+  {
+    "source": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/test/utilidades/PropiedadesTesting.java",
+    "target": "src/test/java/utilidades/PropiedadesTesting.java",
+    "original_class": "PropiedadesTesting",
+    "class": "PropiedadesTesting",
+    "package": "utilidades",
+    "test_methods": [],
+    "original_sha256": "8545670eee5affc9322aca64f45a0ee0763e2b70a113cb3dac2307e80393ae09"
+  }
+]

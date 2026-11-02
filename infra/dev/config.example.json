@@ -1,0 +1,8 @@
+{
+  "sql_port": 14330,
+  "backend_port": 8081,
+  "database": "cmdb_dev",
+  "sql_username": "cmdb_dev_app",
+  "app_username": "devadmin",
+  "accept_eula": "Y"
+}

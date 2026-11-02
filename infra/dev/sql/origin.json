@@ -1,0 +1,7 @@
+{
+  "source": "src/test/resources/db/legacy/01_estructuras.sql",
+  "source_sha256": "89121c0b8dbe4958b2b6a51d458dfac302ec2969faba15c4f9449bbc6d05f0c1",
+  "target": "infra/dev/sql/01-schema.sql",
+  "target_sha256": "a23af6279fb326e070ef5efd0bcdc5a90a973b8dc3950f7434bd941fcc3c3b6b",
+  "adaptation": "Remove only original master/CMDB DROP/CREATE/USE prologue; execute unchanged CREATE TABLE onward in explicitly selected cmdb_dev. No historical data imported."
+}

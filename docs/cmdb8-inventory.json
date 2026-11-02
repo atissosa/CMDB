@@ -1,0 +1,300 @@
+[
+  {
+    "class": "RecursoComboLugares",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoComboLugares.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoComboLugares.java",
+    "paths": [
+      "comboLugares"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoConexionesImpresoras",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoConexionesImpresoras.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoConexionesImpresoras.java",
+    "paths": [
+      "conexionesImpresoras"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoDepartamentoCentral",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoDepartamentoCentral.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoDepartamentoCentral.java",
+    "paths": [
+      "departamento"
+    ],
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoEquipo",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEquipo.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEquipo.java",
+    "paths": [
+      "equipo"
+    ],
+    "methods": [
+      "GET",
+      "DELETE",
+      "PUT",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoEquipos",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEquipos.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEquipos.java",
+    "paths": [
+      "equipos"
+    ],
+    "methods": [
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoEstadosEquipos",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEstadosEquipos.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoEstadosEquipos.java",
+    "paths": [
+      "estadosEquipos"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoHistoricoEquipo",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoHistoricoEquipo.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoHistoricoEquipo.java",
+    "paths": [
+      "historicoEquipo"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoImpresora",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoImpresora.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoImpresora.java",
+    "paths": [
+      "impresora"
+    ],
+    "methods": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoLogin",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoLogin.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoLogin.java",
+    "paths": [
+      "login"
+    ],
+    "methods": [
+      "POST",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoLugar",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoLugar.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoLugar.java",
+    "paths": [
+      "lugar"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoMantenimientoPrestamos",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoMantenimientoPrestamos.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoMantenimientoPrestamos.java",
+    "paths": [
+      "mantenimientoPrestamo"
+    ],
+    "methods": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoOpcionesImpresoras",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoOpcionesImpresoras.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoOpcionesImpresoras.java",
+    "paths": [
+      "opcionesImpresoras"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoOtroEquipo",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoOtroEquipo.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoOtroEquipo.java",
+    "paths": [
+      "otroEquipo"
+    ],
+    "methods": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoPC",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPC.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPC.java",
+    "paths": [
+      "pc"
+    ],
+    "methods": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaImpresora",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaImpresora.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaImpresora.java",
+    "paths": [
+      "plantillaIMPRESORA"
+    ],
+    "methods": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaOtroEquipo",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaOtroEquipo.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaOtroEquipo.java",
+    "paths": [
+      "plantillaOTROEQUIPO"
+    ],
+    "methods": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaPc",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaPc.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaPc.java",
+    "paths": [
+      "plantillaPC"
+    ],
+    "methods": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaValidadora",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaValidadora.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPlantillaValidadora.java",
+    "paths": [
+      "plantillaVALIDADORA"
+    ],
+    "methods": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPrestamo",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPrestamo.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoPrestamo.java",
+    "paths": [
+      "prestamo"
+    ],
+    "methods": [
+      "GET",
+      "POST",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoReparacion",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoReparacion.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoReparacion.java",
+    "paths": [
+      "reparacion"
+    ],
+    "methods": [
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoService",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoService.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoService.java",
+    "paths": [
+      "service"
+    ],
+    "methods": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoSubAgencia",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoSubAgencia.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoSubAgencia.java",
+    "paths": [
+      "subagencia"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoTiposEquipos",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoTiposEquipos.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoTiposEquipos.java",
+    "paths": [
+      "tiposEquipos"
+    ],
+    "methods": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoValidadora",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoValidadora.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/RecursoValidadora.java",
+    "paths": [
+      "validadora"
+    ],
+    "methods": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "UtilidadesServicios",
+    "before": "src/main/java/com/atissosa/cmdb_backend/controllers/UtilidadesServicios.java",
+    "after": "src/main/java/com/atissosa/cmdb_backend/controllers/UtilidadesServicios.java",
+    "paths": [],
+    "methods": []
+  }
+]
