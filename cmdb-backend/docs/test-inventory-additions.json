@@ -1,0 +1,67 @@
+[
+  {
+    "added_by": "CMDB-14",
+    "reason": "Representative real HTTP transport tests; baseline CMDB-9 preserved",
+    "package": "com.atissosa.cmdb_backend.controllers",
+    "class": "TransporteRestTests",
+    "test_methods": [
+      "registraLos24RecursosUnaSolaVez",
+      "vinculaQueryParamsYSerializaLecturas",
+      "deserializaDTOYDelegaAltasCambiosYBajas",
+      "vinculaCabecerasYConservaRespuestasDeLogin",
+      "rechazaJsonInvalidoYTiposNoSoportados",
+      "conservaUnSoloFlujoCors"
+    ]
+  },
+  {
+    "added_by": "CMDB-15",
+    "reason": "Full route/verb/frontend-context contract and body-preserving DELETE",
+    "package": "com.atissosa.cmdb_backend.controllers",
+    "class": "ContratoRutasRestTests",
+    "test_methods": [
+      "mantieneLas51OperacionesEnLaUrlCompleta",
+      "conservaLasLlamadasInventariadasDelFrontend",
+      "contrastaParametrosAusentesVaciosYCodificados",
+      "rechazaRutasYVerbosNoSoportados",
+      "conservaDeleteConCuerpoYCabeceraDelFrontend"
+    ]
+  },
+  {
+    "added_by": "CMDB-16",
+    "reason": "JSON-B-derived frozen payload and envelope contracts over HTTP",
+    "package": "com.atissosa.cmdb_backend.controllers",
+    "class": "ContratoPayloadRestTests",
+    "test_methods": [
+      "conservaLosDtoSegunJsonbOriginal",
+      "conservaEntradasOmisionesNulosYCoerciones",
+      "preservaLos30CodigosYEstadosHttp",
+      "verificaPayloadsEnEndpointsReales",
+      "respetaMayusculasYNumerosDelFrontend",
+      "rechazaJsonSinExponerValoresOInternos"
+    ]
+  },
+  {
+    "added_by": "CMDB-19",
+    "reason": "DataSource/Hikari integration for pooled connections, transaction semantics and resource release",
+    "package": "com.atissosa.cmdb_backend.persistency",
+    "class": "PoolPersistenciaIntegrationTests",
+    "test_methods": [
+      "usaConexionesDesdePoolGestionado",
+      "confirmaYRevierteTransaccionesManteniendoSemantica",
+      "liberaConexionesYStatementsAnteExcepcion",
+      "reutilizaPoolPequenioSinAgotamiento"
+    ]
+  },
+  {
+    "added_by": "CMDB-20",
+    "reason": "Minimal mapper adaptation validation over DataSource lifecycle (families, empty/null, generated key, rollback and error contract)",
+    "package": "com.atissosa.cmdb_backend.persistency",
+    "class": "MapeadoresAdaptacionIntegrationTests",
+    "test_methods": [
+      "cubreLecturasRepresentativasPorFamiliaDeMapeadores",
+      "conservaBusquedasVaciasYTratamientoDeNull",
+      "conservaClaveGeneradaYRollbackEnOperacionCompuesta",
+      "conservaContratoDeExcepcionAnteErrorDePersistencia"
+    ]
+  }
+]

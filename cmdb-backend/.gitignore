@@ -1,0 +1,54 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Generated validation evidence and runtime artifacts
+docs/evidence/
+contract-http-reports/
+payload-http-reports/
+legacy-test-output/
+legacy-test-report/
+*.log
+*.tmp
+*.bak
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Local secret inputs (templates remain safe to share) ###
+.env
+.env.*
+!.env.example
+*.secrets.properties
+config-local.properties
+
+### Local Python tool caches ###
+__pycache__/
+*.pyc

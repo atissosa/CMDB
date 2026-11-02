@@ -1,0 +1,2321 @@
+{
+  "legacy_base_url": "http://localhost:8080/cmdb-backend/recursos/",
+  "servlet_context": "/cmdb-backend",
+  "application_path": "/recursos",
+  "operations": [
+    {
+      "verb": "GET",
+      "method": "todosLosLugaresHomologados",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "lugaresHomologados",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": false,
+      "produces_json": true,
+      "class": "RecursoComboLugares",
+      "resource_path": "/recursos/comboLugares",
+      "legacy_full_path": "/cmdb-backend/recursos/comboLugares",
+      "migrated_full_path": "/cmdb-backend/recursos/comboLugares",
+      "frontend_calls": [
+        {
+          "line": 1338,
+          "caller": "cargarLugaresEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "devolverConexionesImpresoras",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "retornarConexionesImpresoras",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoConexionesImpresoras",
+      "resource_path": "/recursos/conexionesImpresoras",
+      "legacy_full_path": "/cmdb-backend/recursos/conexionesImpresoras",
+      "migrated_full_path": "/cmdb-backend/recursos/conexionesImpresoras",
+      "frontend_calls": [
+        {
+          "line": 1130,
+          "caller": "cargarConexionesImpresora"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscar",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "business_calls": [
+        {
+          "method": "buscarDepartamentosCentral",
+          "arguments": "id"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoDepartamentoCentral",
+      "resource_path": "/recursos/departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "migrated_full_path": "/cmdb-backend/recursos/departamento",
+      "frontend_calls": [
+        {
+          "line": 322,
+          "caller": "cargarDepartamentosCentral"
+        },
+        {
+          "line": 380,
+          "caller": "cargarDepartamento"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "alta",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "business_calls": [
+        {
+          "method": "altaDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoDepartamentoCentral",
+      "resource_path": "/recursos/departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "migrated_full_path": "/cmdb-backend/recursos/departamento",
+      "frontend_calls": [
+        {
+          "line": 410,
+          "caller": "altaDepartamento"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificar",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "business_calls": [
+        {
+          "method": "modificarDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoDepartamentoCentral",
+      "resource_path": "/recursos/departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "migrated_full_path": "/cmdb-backend/recursos/departamento",
+      "frontend_calls": [
+        {
+          "line": 423,
+          "caller": "modificarDepartamento"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "baja",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTODepartamentoCentral dtoDepartamento",
+      "business_calls": [
+        {
+          "method": "bajaDepartamentoCentral",
+          "arguments": "dtoDepartamento, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoDepartamentoCentral",
+      "resource_path": "/recursos/departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "migrated_full_path": "/cmdb-backend/recursos/departamento",
+      "frontend_calls": [
+        {
+          "line": 392,
+          "caller": "borrarDepartamento"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarEquipos",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarEquipos",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEquipo",
+      "resource_path": "/recursos/equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "migrated_full_path": "/cmdb-backend/recursos/equipo",
+      "frontend_calls": [],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "darEquipoDeBaja",
+      "response_type": "Response",
+      "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+      "business_calls": [
+        {
+          "method": "darEquipoDeBaja",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEquipo",
+      "resource_path": "/recursos/equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "migrated_full_path": "/cmdb-backend/recursos/equipo",
+      "frontend_calls": [
+        {
+          "line": 936,
+          "caller": "borrarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "asignarParaPrestamo",
+      "response_type": "Response",
+      "parameters": "DTOFiltroEquipo dtoFiltroEquipo",
+      "business_calls": [
+        {
+          "method": "asignarEquipoParaPrestamo",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEquipo",
+      "resource_path": "/recursos/equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "migrated_full_path": "/cmdb-backend/recursos/equipo",
+      "frontend_calls": [
+        {
+          "line": 871,
+          "caller": "asignarEquipoParaPrestamo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "despacharEquipo",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "despacharEquipo",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEquipo",
+      "resource_path": "/recursos/equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "migrated_full_path": "/cmdb-backend/recursos/equipo",
+      "frontend_calls": [
+        {
+          "line": 857,
+          "caller": "despacharEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "buscarEquipos",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOFiltroEquipo dtoFiltroEquipo",
+      "business_calls": [
+        {
+          "method": "buscarEquipos",
+          "arguments": "dtoFiltroEquipo"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEquipos",
+      "resource_path": "/recursos/equipos",
+      "legacy_full_path": "/cmdb-backend/recursos/equipos",
+      "migrated_full_path": "/cmdb-backend/recursos/equipos",
+      "frontend_calls": [
+        {
+          "line": 802,
+          "caller": "cargarEquipos"
+        },
+        {
+          "line": 1370,
+          "caller": "cambioSubagenciaPrestamo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "devolverEstadosEquipos",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "retornarEstadosEquipos",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoEstadosEquipos",
+      "resource_path": "/recursos/estadosEquipos",
+      "legacy_full_path": "/cmdb-backend/recursos/estadosEquipos",
+      "migrated_full_path": "/cmdb-backend/recursos/estadosEquipos",
+      "frontend_calls": [
+        {
+          "line": 1098,
+          "caller": "cargarEstadosEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getHistoricoEquipos",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarHistoricoEquipos",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoHistoricoEquipo",
+      "resource_path": "/recursos/historicoEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/historicoEquipo",
+      "migrated_full_path": "/cmdb-backend/recursos/historicoEquipo",
+      "frontend_calls": [
+        {
+          "line": 1459,
+          "caller": "mostrarModalHistoricoEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "altaImpresora",
+      "response_type": "Response",
+      "parameters": "DTOImpresora nuevaImpresora",
+      "business_calls": [
+        {
+          "method": "altaImpresora",
+          "arguments": "nuevaImpresora"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoImpresora",
+      "resource_path": "/recursos/impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "migrated_full_path": "/cmdb-backend/recursos/impresora",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarImpresora",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoImpresora",
+      "resource_path": "/recursos/impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "migrated_full_path": "/cmdb-backend/recursos/impresora",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificarImpresora",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOImpresora impresora",
+      "business_calls": [
+        {
+          "method": "modificarImpresora",
+          "arguments": "impresora, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoImpresora",
+      "resource_path": "/recursos/impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "migrated_full_path": "/cmdb-backend/recursos/impresora",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "login",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers",
+      "business_calls": [
+        {
+          "method": "login",
+          "arguments": "credencialesSeparadas[0], credencialesSeparadas[1]"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoLogin",
+      "resource_path": "/recursos/login",
+      "legacy_full_path": "/cmdb-backend/recursos/login",
+      "migrated_full_path": "/cmdb-backend/recursos/login",
+      "frontend_calls": [
+        {
+          "line": 306,
+          "caller": "login"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "logout",
+      "response_type": "void",
+      "parameters": "@Context HttpHeaders headers",
+      "business_calls": [
+        {
+          "method": "logout",
+          "arguments": "credencialesSeparadas[0]"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": false,
+      "class": "RecursoLogin",
+      "resource_path": "/recursos/login",
+      "legacy_full_path": "/cmdb-backend/recursos/login",
+      "migrated_full_path": "/cmdb-backend/recursos/login",
+      "frontend_calls": [
+        {
+          "line": 284,
+          "caller": "cerrarSesion"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarEquipos",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "business_calls": [
+        {
+          "method": "getLugares",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoLugar",
+      "resource_path": "/recursos/lugar",
+      "legacy_full_path": "/cmdb-backend/recursos/lugar",
+      "migrated_full_path": "/cmdb-backend/recursos/lugar",
+      "frontend_calls": [],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "listadoMantenimiento",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers",
+      "business_calls": [
+        {
+          "method": "listadoMantenimientoEquiposDePrestamo",
+          "arguments": "credencialesSeparadas[0]"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoMantenimientoPrestamos",
+      "resource_path": "/recursos/mantenimientoPrestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "migrated_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "frontend_calls": [
+        {
+          "line": 658,
+          "caller": "cargarListadoMantenimientoPrestamos"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "modificarParametrosMantenimientoPrestamo",
+      "response_type": "Response",
+      "parameters": "DTOParametroMantenimientoPrestamo dto",
+      "business_calls": [
+        {
+          "method": "modificarParametrosMantenimientoPrestamos",
+          "arguments": "dto"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoMantenimientoPrestamos",
+      "resource_path": "/recursos/mantenimientoPrestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "migrated_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "frontend_calls": [
+        {
+          "line": 677,
+          "caller": "modificarParametrosMantenimientoPrestamo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "devolverOpcionesImpresoras",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "retornarOpcionesImpresoras",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoOpcionesImpresoras",
+      "resource_path": "/recursos/opcionesImpresoras",
+      "legacy_full_path": "/cmdb-backend/recursos/opcionesImpresoras",
+      "migrated_full_path": "/cmdb-backend/recursos/opcionesImpresoras",
+      "frontend_calls": [
+        {
+          "line": 1114,
+          "caller": "cargarOpcionesImpresora"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "altaOtroEquipo",
+      "response_type": "Response",
+      "parameters": "DTOOtroEquipo nuevoOtroEquipo",
+      "business_calls": [
+        {
+          "method": "altaOtroEquipo",
+          "arguments": "nuevoOtroEquipo"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoOtroEquipo",
+      "resource_path": "/recursos/otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "migrated_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarOtroEquipo",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoOtroEquipo",
+      "resource_path": "/recursos/otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "migrated_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificarOtroEquipo",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOOtroEquipo equipo",
+      "business_calls": [
+        {
+          "method": "modificarOtroEquipo",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoOtroEquipo",
+      "resource_path": "/recursos/otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "migrated_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "altaPC",
+      "response_type": "Response",
+      "parameters": "DTOPC nuevaPC",
+      "business_calls": [
+        {
+          "method": "altaPc",
+          "arguments": "nuevaPC"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPC",
+      "resource_path": "/recursos/pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "migrated_full_path": "/cmdb-backend/recursos/pc",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarPc",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPC",
+      "resource_path": "/recursos/pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "migrated_full_path": "/cmdb-backend/recursos/pc",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificarPC",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOPC pc",
+      "business_calls": [
+        {
+          "method": "modificarPC",
+          "arguments": "pc, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPC",
+      "resource_path": "/recursos/pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "migrated_full_path": "/cmdb-backend/recursos/pc",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getPlantillasImpresora",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "business_calls": [
+        {
+          "method": "getPlantillasImpresoras",
+          "arguments": "marca"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaImpresora",
+      "resource_path": "/recursos/plantillaIMPRESORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "getPlantillaImpresora",
+      "response_type": "Response",
+      "parameters": "DTOPlantillaImpresora dto",
+      "business_calls": [
+        {
+          "method": "buscarPlantillaImpresora",
+          "arguments": "dto"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaImpresora",
+      "resource_path": "/recursos/plantillaIMPRESORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getPlantillasOtroEquipo",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"marca\") String marca, @QueryParam(\"tipo\") String tipo",
+      "business_calls": [
+        {
+          "method": "getPlantillasOtroEquipo",
+          "arguments": "tipo, marca"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaOtroEquipo",
+      "resource_path": "/recursos/plantillaOTROEQUIPO",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "getPlantillaOtroEquipo",
+      "response_type": "Response",
+      "parameters": "DTOPlantillaOtroEquipo dto",
+      "business_calls": [
+        {
+          "method": "buscarPlantillaOtroEquipo",
+          "arguments": "dto"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaOtroEquipo",
+      "resource_path": "/recursos/plantillaOTROEQUIPO",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getPlantillasPc",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "business_calls": [
+        {
+          "method": "getPlantillasPc",
+          "arguments": "marca"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaPc",
+      "resource_path": "/recursos/plantillaPC",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "getPlantillaPc",
+      "response_type": "Response",
+      "parameters": "DTOPlantillaPc dto",
+      "business_calls": [
+        {
+          "method": "buscarPlantillaPC",
+          "arguments": "dto"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaPc",
+      "resource_path": "/recursos/plantillaPC",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getPlantillasValidadoras",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"marca\") String marca",
+      "business_calls": [
+        {
+          "method": "getPlantillasValidadoras",
+          "arguments": "marca"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaValidadora",
+      "resource_path": "/recursos/plantillaVALIDADORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "frontend_calls": [
+        {
+          "line": 1066,
+          "caller": "cargarMarcasEquipo"
+        },
+        {
+          "line": 1154,
+          "caller": "cambioMarcaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "getPlantillaPc",
+      "response_type": "Response",
+      "parameters": "DTOPlantillaValidadora dto",
+      "business_calls": [
+        {
+          "method": "buscarPlantillaValidadora",
+          "arguments": "dto"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPlantillaValidadora",
+      "resource_path": "/recursos/plantillaVALIDADORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "migrated_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "frontend_calls": [
+        {
+          "line": 1193,
+          "caller": "cambioModeloEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "getParametrosMantenimiento",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "getParametrosMantenimiento",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPrestamo",
+      "resource_path": "/recursos/prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "migrated_full_path": "/cmdb-backend/recursos/prestamo",
+      "frontend_calls": [
+        {
+          "line": 1507,
+          "caller": "mostrarModalParametros"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "prestarEquipoSubagencia",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "prestarEquipoSubagencia",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPrestamo",
+      "resource_path": "/recursos/prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "migrated_full_path": "/cmdb-backend/recursos/prestamo",
+      "frontend_calls": [
+        {
+          "line": 1395,
+          "caller": "prestarEquipoSubagencia"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "devolverEquipoCentral",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "devolverEquipoCentral",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoPrestamo",
+      "resource_path": "/recursos/prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "migrated_full_path": "/cmdb-backend/recursos/prestamo",
+      "frontend_calls": [
+        {
+          "line": 1412,
+          "caller": "devolverEquipoCentral"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "EquipoRotoParaReparar",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "enviarEquipoAReparar",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoReparacion",
+      "resource_path": "/recursos/reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "migrated_full_path": "/cmdb-backend/recursos/reparacion",
+      "frontend_calls": [
+        {
+          "line": 843,
+          "caller": "marcarEquipoComoRoto"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "iniciarReparacionEquipo",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "ingresarEquipoAReparar",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoReparacion",
+      "resource_path": "/recursos/reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "migrated_full_path": "/cmdb-backend/recursos/reparacion",
+      "frontend_calls": [
+        {
+          "line": 829,
+          "caller": "iniciarReparacionEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "finalizarReparacion",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOEquipo equipo",
+      "business_calls": [
+        {
+          "method": "devolverEquipoReparado",
+          "arguments": "equipo, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoReparacion",
+      "resource_path": "/recursos/reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "migrated_full_path": "/cmdb-backend/recursos/reparacion",
+      "frontend_calls": [
+        {
+          "line": 815,
+          "caller": "finalizarReparacionEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscar",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"id\") Integer id",
+      "business_calls": [
+        {
+          "method": "buscarServices",
+          "arguments": "id"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoService",
+      "resource_path": "/recursos/service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "migrated_full_path": "/cmdb-backend/recursos/service",
+      "frontend_calls": [
+        {
+          "line": 438,
+          "caller": "cargarServicios"
+        },
+        {
+          "line": 499,
+          "caller": "cargarService"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "alta",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOService nuevoService",
+      "business_calls": [
+        {
+          "method": "altaService",
+          "arguments": "nuevoService, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoService",
+      "resource_path": "/recursos/service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "migrated_full_path": "/cmdb-backend/recursos/service",
+      "frontend_calls": [
+        {
+          "line": 530,
+          "caller": "altaService"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificar",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOService service",
+      "business_calls": [
+        {
+          "method": "modificarService",
+          "arguments": "service, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoService",
+      "resource_path": "/recursos/service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "migrated_full_path": "/cmdb-backend/recursos/service",
+      "frontend_calls": [
+        {
+          "line": 544,
+          "caller": "modificarService"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "DELETE",
+      "method": "baja",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOService service",
+      "business_calls": [
+        {
+          "method": "bajaService",
+          "arguments": "service, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoService",
+      "resource_path": "/recursos/service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "migrated_full_path": "/cmdb-backend/recursos/service",
+      "frontend_calls": [
+        {
+          "line": 511,
+          "caller": "borrarService"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscar",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numero\") Integer numero",
+      "business_calls": [
+        {
+          "method": "buscarSubagencias",
+          "arguments": "numero"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoSubAgencia",
+      "resource_path": "/recursos/subagencia",
+      "legacy_full_path": "/cmdb-backend/recursos/subagencia",
+      "migrated_full_path": "/cmdb-backend/recursos/subagencia",
+      "frontend_calls": [
+        {
+          "line": 559,
+          "caller": "cargarSubagencias"
+        },
+        {
+          "line": 1352,
+          "caller": "mostrarModalPrestarEquipoSubagencia"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "devolverTiposEquipos",
+      "response_type": "Response",
+      "parameters": "",
+      "business_calls": [
+        {
+          "method": "retornaTiposEquipos",
+          "arguments": ""
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoTiposEquipos",
+      "resource_path": "/recursos/tiposEquipos",
+      "legacy_full_path": "/cmdb-backend/recursos/tiposEquipos",
+      "migrated_full_path": "/cmdb-backend/recursos/tiposEquipos",
+      "frontend_calls": [
+        {
+          "line": 1082,
+          "caller": "cargarTiposEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "POST",
+      "method": "altaValidadora",
+      "response_type": "Response",
+      "parameters": "DTOValidadora nuevaValidadora",
+      "business_calls": [
+        {
+          "method": "altaValidadora",
+          "arguments": "nuevaValidadora"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoValidadora",
+      "resource_path": "/recursos/validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "migrated_full_path": "/cmdb-backend/recursos/validadora",
+      "frontend_calls": [
+        {
+          "line": 1030,
+          "caller": "altaEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "GET",
+      "method": "buscarValidadora",
+      "response_type": "Response",
+      "parameters": "@QueryParam(\"numeroSerie\") String numeroSerie",
+      "business_calls": [
+        {
+          "method": "buscarEquipo",
+          "arguments": "numeroSerie"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoValidadora",
+      "resource_path": "/recursos/validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "migrated_full_path": "/cmdb-backend/recursos/validadora",
+      "frontend_calls": [
+        {
+          "line": 921,
+          "caller": "cargarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    },
+    {
+      "verb": "PUT",
+      "method": "modificarValidadora",
+      "response_type": "Response",
+      "parameters": "@Context HttpHeaders headers, DTOValidadora validadora",
+      "business_calls": [
+        {
+          "method": "modificarValidadora",
+          "arguments": "validadora, user"
+        }
+      ],
+      "consumes_json": true,
+      "produces_json": true,
+      "class": "RecursoValidadora",
+      "resource_path": "/recursos/validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "migrated_full_path": "/cmdb-backend/recursos/validadora",
+      "frontend_calls": [
+        {
+          "line": 1323,
+          "caller": "modificarEquipo"
+        }
+      ],
+      "compatibility_change": "restore servlet context; resource annotations unchanged"
+    }
+  ],
+  "frontend_calls": [
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 284,
+      "caller": "cerrarSesion",
+      "original_method": "\"delete\"",
+      "verb": "DELETE",
+      "resource_expression": "\"login\"",
+      "resolved_resource": "login",
+      "legacy_full_path": "/cmdb-backend/recursos/login",
+      "request_data_expression": "null",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 306,
+      "caller": "login",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"login\"",
+      "resolved_resource": "login",
+      "legacy_full_path": "/cmdb-backend/recursos/login",
+      "request_data_expression": "null",
+      "credential_expression": "\"Basic \" + btoa($(\"#inputUsuario\").val() + \":\" + $(\"#inputPass\").val())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 322,
+      "caller": "cargarDepartamentosCentral",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"departamento\"",
+      "resolved_resource": "departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 380,
+      "caller": "cargarDepartamento",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"departamento\"",
+      "resolved_resource": "departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "request_data_expression": "departamento",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "id"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 392,
+      "caller": "borrarDepartamento",
+      "original_method": "\"DELETE\"",
+      "verb": "DELETE",
+      "resource_expression": "\"departamento\"",
+      "resolved_resource": "departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 410,
+      "caller": "altaDepartamento",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"departamento\"",
+      "resolved_resource": "departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 423,
+      "caller": "modificarDepartamento",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "\"departamento\"",
+      "resolved_resource": "departamento",
+      "legacy_full_path": "/cmdb-backend/recursos/departamento",
+      "request_data_expression": "departamento",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 438,
+      "caller": "cargarServicios",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"service\"",
+      "resolved_resource": "service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 499,
+      "caller": "cargarService",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"service\"",
+      "resolved_resource": "service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "request_data_expression": "equipo",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "id"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 511,
+      "caller": "borrarService",
+      "original_method": "\"DELETE\"",
+      "verb": "DELETE",
+      "resource_expression": "\"service\"",
+      "resolved_resource": "service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 530,
+      "caller": "altaService",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"service\"",
+      "resolved_resource": "service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(getCookie(\"nombreUsuario\"))",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 544,
+      "caller": "modificarService",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "\"service\"",
+      "resolved_resource": "service",
+      "legacy_full_path": "/cmdb-backend/recursos/service",
+      "request_data_expression": "service",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 559,
+      "caller": "cargarSubagencias",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"subagencia\"",
+      "resolved_resource": "subagencia",
+      "legacy_full_path": "/cmdb-backend/recursos/subagencia",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 658,
+      "caller": "cargarListadoMantenimientoPrestamos",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"mantenimientoPrestamo\"",
+      "resolved_resource": "mantenimientoPrestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "request_data_expression": "null",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 677,
+      "caller": "modificarParametrosMantenimientoPrestamo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"mantenimientoPrestamo\"",
+      "resolved_resource": "mantenimientoPrestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/mantenimientoPrestamo",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 802,
+      "caller": "cargarEquipos",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"equipos\"",
+      "resolved_resource": "equipos",
+      "legacy_full_path": "/cmdb-backend/recursos/equipos",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 815,
+      "caller": "finalizarReparacionEquipo",
+      "original_method": "\"delete\"",
+      "verb": "DELETE",
+      "resource_expression": "\"reparacion\"",
+      "resolved_resource": "reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 829,
+      "caller": "iniciarReparacionEquipo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "\"reparacion\"",
+      "resolved_resource": "reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 843,
+      "caller": "marcarEquipoComoRoto",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"reparacion\"",
+      "resolved_resource": "reparacion",
+      "legacy_full_path": "/cmdb-backend/recursos/reparacion",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 857,
+      "caller": "despacharEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"equipo\"",
+      "resolved_resource": "equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 871,
+      "caller": "asignarEquipoParaPrestamo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "\"equipo\"",
+      "resolved_resource": "equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 921,
+      "caller": "cargarEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "recurso",
+      "resolved_resource": "impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "request_data_expression": "equipo",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "numeroSerie"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 921,
+      "caller": "cargarEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "recurso",
+      "resolved_resource": "otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "request_data_expression": "equipo",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "numeroSerie"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 921,
+      "caller": "cargarEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "recurso",
+      "resolved_resource": "pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "request_data_expression": "equipo",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "numeroSerie"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 921,
+      "caller": "cargarEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "recurso",
+      "resolved_resource": "validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "request_data_expression": "equipo",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "numeroSerie"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 936,
+      "caller": "borrarEquipo",
+      "original_method": "\"DELETE\"",
+      "verb": "DELETE",
+      "resource_expression": "\"equipo\"",
+      "resolved_resource": "equipo",
+      "legacy_full_path": "/cmdb-backend/recursos/equipo",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1030,
+      "caller": "altaEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "recurso",
+      "resolved_resource": "impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1030,
+      "caller": "altaEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "recurso",
+      "resolved_resource": "otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1030,
+      "caller": "altaEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "recurso",
+      "resolved_resource": "pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1030,
+      "caller": "altaEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "recurso",
+      "resolved_resource": "validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1066,
+      "caller": "cargarMarcasEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaPC",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1066,
+      "caller": "cargarMarcasEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaIMPRESORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1066,
+      "caller": "cargarMarcasEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaVALIDADORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1066,
+      "caller": "cargarMarcasEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaOTROEQUIPO",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "tipo"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1082,
+      "caller": "cargarTiposEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"tiposEquipos\"",
+      "resolved_resource": "tiposEquipos",
+      "legacy_full_path": "/cmdb-backend/recursos/tiposEquipos",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1098,
+      "caller": "cargarEstadosEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"estadosEquipos\"",
+      "resolved_resource": "estadosEquipos",
+      "legacy_full_path": "/cmdb-backend/recursos/estadosEquipos",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1114,
+      "caller": "cargarOpcionesImpresora",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"opcionesImpresoras\"",
+      "resolved_resource": "opcionesImpresoras",
+      "legacy_full_path": "/cmdb-backend/recursos/opcionesImpresoras",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1130,
+      "caller": "cargarConexionesImpresora",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"conexionesImpresoras\"",
+      "resolved_resource": "conexionesImpresoras",
+      "legacy_full_path": "/cmdb-backend/recursos/conexionesImpresoras",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1154,
+      "caller": "cambioMarcaEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaPC",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "marca"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1154,
+      "caller": "cambioMarcaEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaIMPRESORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "marca"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1154,
+      "caller": "cambioMarcaEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaVALIDADORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "marca"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1154,
+      "caller": "cambioMarcaEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaOTROEQUIPO",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "marca",
+        "tipo"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1193,
+      "caller": "cambioModeloEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaPC",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaPC",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1193,
+      "caller": "cambioModeloEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaIMPRESORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaIMPRESORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1193,
+      "caller": "cambioModeloEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaVALIDADORA",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaVALIDADORA",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1193,
+      "caller": "cambioModeloEquipo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"plantilla\" + tipoEquipo",
+      "resolved_resource": "plantillaOTROEQUIPO",
+      "legacy_full_path": "/cmdb-backend/recursos/plantillaOTROEQUIPO",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1323,
+      "caller": "modificarEquipo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "recurso",
+      "resolved_resource": "impresora",
+      "legacy_full_path": "/cmdb-backend/recursos/impresora",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1323,
+      "caller": "modificarEquipo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "recurso",
+      "resolved_resource": "otroEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/otroEquipo",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1323,
+      "caller": "modificarEquipo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "recurso",
+      "resolved_resource": "pc",
+      "legacy_full_path": "/cmdb-backend/recursos/pc",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1323,
+      "caller": "modificarEquipo",
+      "original_method": "\"put\"",
+      "verb": "PUT",
+      "resource_expression": "recurso",
+      "resolved_resource": "validadora",
+      "legacy_full_path": "/cmdb-backend/recursos/validadora",
+      "request_data_expression": "parametros",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1338,
+      "caller": "cargarLugaresEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"comboLugares\"",
+      "resolved_resource": "comboLugares",
+      "legacy_full_path": "/cmdb-backend/recursos/comboLugares",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1352,
+      "caller": "mostrarModalPrestarEquipoSubagencia",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"subagencia\"",
+      "resolved_resource": "subagencia",
+      "legacy_full_path": "/cmdb-backend/recursos/subagencia",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1370,
+      "caller": "cambioSubagenciaPrestamo",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"equipos\"",
+      "resolved_resource": "equipos",
+      "legacy_full_path": "/cmdb-backend/recursos/equipos",
+      "request_data_expression": "parametros",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1395,
+      "caller": "prestarEquipoSubagencia",
+      "original_method": "\"post\"",
+      "verb": "POST",
+      "resource_expression": "\"prestamo\"",
+      "resolved_resource": "prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "request_data_expression": "equipo",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1412,
+      "caller": "devolverEquipoCentral",
+      "original_method": "\"delete\"",
+      "verb": "DELETE",
+      "resource_expression": "\"prestamo\"",
+      "resolved_resource": "prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "request_data_expression": "equipo",
+      "credential_expression": "\"Basic \" + btoa(usuarioNombre())",
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "JSON body when data is non-null",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1459,
+      "caller": "mostrarModalHistoricoEquipo",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"historicoEquipo\"",
+      "resolved_resource": "historicoEquipo",
+      "legacy_full_path": "/cmdb-backend/recursos/historicoEquipo",
+      "request_data_expression": "parametro",
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [
+        "numeroSerie"
+      ],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    },
+    {
+      "frontend_file": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "line": 1507,
+      "caller": "mostrarModalParametros",
+      "original_method": "\"get\"",
+      "verb": "GET",
+      "resource_expression": "\"prestamo\"",
+      "resolved_resource": "prestamo",
+      "legacy_full_path": "/cmdb-backend/recursos/prestamo",
+      "request_data_expression": null,
+      "credential_expression": null,
+      "headers_expression": null,
+      "query_keys": [],
+      "data_transport": "query",
+      "content_type": "application/json",
+      "authorization_policy": "hacerRequest sets Authorization from credenciales"
+    }
+  ],
+  "frontend_call_sites": 39,
+  "frontend_expanded_calls": 57,
+  "frontend_unique_operations": 49,
+  "source_files": [
+    {
+      "path": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/conf/propiedades.js",
+      "sha256": "5cdbd9dfed54f0dcad0ea4d74689075cd845b710a69109ec4e9015ab03d2e088"
+    },
+    {
+      "path": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-frontend/public_html/js/funciones.js",
+      "sha256": "51752fca3d2ee57eab8a59676b00c9e00dad7d99f2d120032de179cbd01e939a"
+    },
+    {
+      "path": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/src/java/global/Aplicacion.java",
+      "sha256": "6ec49b03fe43a01395b9c2fff2d3246516605d6806e7e5d9fe79159c49f88364"
+    },
+    {
+      "path": "${HOME}/Desktop/CMDB_ENTREGA/Fuentes/cmdb-backend/web/WEB-INF/web.xml",
+      "sha256": "9659d520177db4b3f3dda8e104078c39663f96fc29a11cf29845a9e43144a0a7"
+    }
+  ]
+}

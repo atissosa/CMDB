@@ -1,0 +1,197 @@
+[
+  {
+    "class": "RecursoComboLugares",
+    "path": "/recursos/comboLugares",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoConexionesImpresoras",
+    "path": "/recursos/conexionesImpresoras",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoDepartamentoCentral",
+    "path": "/recursos/departamento",
+    "verbs": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoEquipo",
+    "path": "/recursos/equipo",
+    "verbs": [
+      "GET",
+      "DELETE",
+      "PUT",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoEquipos",
+    "path": "/recursos/equipos",
+    "verbs": [
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoEstadosEquipos",
+    "path": "/recursos/estadosEquipos",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoHistoricoEquipo",
+    "path": "/recursos/historicoEquipo",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoImpresora",
+    "path": "/recursos/impresora",
+    "verbs": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoLogin",
+    "path": "/recursos/login",
+    "verbs": [
+      "POST",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoLugar",
+    "path": "/recursos/lugar",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoMantenimientoPrestamos",
+    "path": "/recursos/mantenimientoPrestamo",
+    "verbs": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoOpcionesImpresoras",
+    "path": "/recursos/opcionesImpresoras",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoOtroEquipo",
+    "path": "/recursos/otroEquipo",
+    "verbs": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoPC",
+    "path": "/recursos/pc",
+    "verbs": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaImpresora",
+    "path": "/recursos/plantillaIMPRESORA",
+    "verbs": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaOtroEquipo",
+    "path": "/recursos/plantillaOTROEQUIPO",
+    "verbs": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaPc",
+    "path": "/recursos/plantillaPC",
+    "verbs": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPlantillaValidadora",
+    "path": "/recursos/plantillaVALIDADORA",
+    "verbs": [
+      "GET",
+      "POST"
+    ]
+  },
+  {
+    "class": "RecursoPrestamo",
+    "path": "/recursos/prestamo",
+    "verbs": [
+      "GET",
+      "POST",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoReparacion",
+    "path": "/recursos/reparacion",
+    "verbs": [
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoService",
+    "path": "/recursos/service",
+    "verbs": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE"
+    ]
+  },
+  {
+    "class": "RecursoSubAgencia",
+    "path": "/recursos/subagencia",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoTiposEquipos",
+    "path": "/recursos/tiposEquipos",
+    "verbs": [
+      "GET"
+    ]
+  },
+  {
+    "class": "RecursoValidadora",
+    "path": "/recursos/validadora",
+    "verbs": [
+      "POST",
+      "GET",
+      "PUT"
+    ]
+  }
+]
