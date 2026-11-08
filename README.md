@@ -88,9 +88,3 @@ python3 scripts/verify-test-inventory.py
 - Mantener el flujo de build/run de cada componente dentro de su carpeta.
 - No mover archivos Maven del backend (pom.xml, src/) a la raiz.
 - No mezclar artefactos de build entre frontend y backend.
-
-## Notas
-
-- El historial del backend fue preservado e importado bajo cmdb-backend/.
-- El frontend fue incorporado como snapshot inicial porque no se encontro un
-	repositorio Git propio dentro de cmdb-frontend/.
